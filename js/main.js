@@ -191,12 +191,24 @@ window.onload = function() {
                     }
                 })
             }
-            // тут будем навешивать класс на крутилку, потом препроцессором будем крутить стрелочку и круг
+            // тут будем навешивать класс на крутилку, потом препроцессором будем крутить стрелочку
             if (slider.classList.contains('input-range-floor')) {
+
                 modalBlock.classList.add('range-floor');
+                const orangePartSliderInModal = modalBlock.querySelector('.arc-orange-floor');
+                const blackPartSliderInModal = modalBlock.querySelector('.arc-black-floor');
+
+                const degree = 270 / (slider['max'] - slider['min']);
+                 orangePartSliderInModal.setAttribute('d', describeArc(110, 110, 98, 225, 225 + (slider['value'] - slider['min']) * degree));
+                 blackPartSliderInModal.setAttribute('d', describeArc(110, 110, 98, 225 + (slider['value'] - slider['min']) * degree, 495));
+
                 slider.oninput = function () {
                     circleSliderInModal.setAttribute('class', 'input-range-div value' + this.value);
                     outputText.innerHTML = "+" + this.value;
+                    const degree = 270 / (this['max'] - this['min']);
+                    const iteration = this['value'] - this['min'];
+                    orangePartSliderInModal.setAttribute("d", describeArc(110, 110, 98, 225, 225 + iteration * degree));
+                    blackPartSliderInModal.setAttribute("d", describeArc(110, 110, 98, 225 + iteration * degree, 495));
                 };
             }
             //в конце всего навешиваем на модальное окно актив, чтобы оно начало появляться
@@ -249,6 +261,8 @@ window.onload = function() {
                 // если есть блок с крутилкой, навешиваем класс, если нет, то сохраняем фильтры из модального окна к блоку устройств
                 if (circleSliderInModal) {
                     circleSlider.setAttribute('class', circleSliderInModal.getAttribute('class'));
+                    document.querySelector('.arc-orange-floor').setAttribute("d", modalBlock.querySelector('.arc-orange-floor').getAttribute("d"));
+                    document.querySelector('.arc-black-floor').setAttribute("d", modalBlock.querySelector('.arc-black-floor').getAttribute("d"));
                 } else {
                     device.querySelector('.slider-filters-ul').innerHTML = '';
                     filtersSlider.forEach(function (filterItem) {
@@ -321,3 +335,28 @@ window.onload = function() {
         this.classList.toggle('active');
     };
 };
+
+
+function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+    const angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
+
+    return {
+        x: centerX + (radius * Math.cos(angleInRadians)),
+        y: centerY + (radius * Math.sin(angleInRadians))
+    };
+}
+
+function describeArc(x, y, radius, startAngle, endAngle){
+
+    const start = polarToCartesian(x, y, radius, endAngle);
+    const end = polarToCartesian(x, y, radius, startAngle);
+
+    const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+
+    const d = [
+        "M", start.x, start.y,
+        "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y
+    ].join(" ");
+
+    return d;
+}
