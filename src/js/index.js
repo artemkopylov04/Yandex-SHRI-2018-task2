@@ -197,10 +197,12 @@ window.onload = function() {
                 modalBlock.classList.add('range-floor');
                 const orangePartSliderInModal = modalBlock.querySelector('.arc-orange-floor');
                 const blackPartSliderInModal = modalBlock.querySelector('.arc-black-floor');
+                const dashArray = modalBlock.querySelector('.dasharray');
 
                 const degree = 270 / (slider['max'] - slider['min']);
                  orangePartSliderInModal.setAttribute('d', describeArc(110, 110, 98, 225, 225 + (slider['value'] - slider['min']) * degree));
                  blackPartSliderInModal.setAttribute('d', describeArc(110, 110, 98, 225 + (slider['value'] - slider['min']) * degree, 495));
+                 dashArray.setAttribute('d', describeArc(110, 110, 98, 225, 495));
 
                 slider.oninput = function () {
                     circleSliderInModal.setAttribute('class', 'input-range-div value' + this.value);
@@ -208,7 +210,6 @@ window.onload = function() {
                     const degree = 270 / (this['max'] - this['min']);
                     const iteration = this['value'] - this['min'];
                     orangePartSliderInModal.setAttribute("d", describeArc(110, 110, 98, 225, 225 + iteration * degree));
-                    blackPartSliderInModal.setAttribute("d", describeArc(110, 110, 98, 225 + iteration * degree, 495));
                 };
             }
             //в конце всего навешиваем на модальное окно актив, чтобы оно начало появляться
