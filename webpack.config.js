@@ -40,7 +40,7 @@ module.exports = {
                    ]
                },
                {
-                   test: /\.sass$/,
+                   test: /index.sass$/,
                    use: [
                        "style-loader",
                        "css-loader",

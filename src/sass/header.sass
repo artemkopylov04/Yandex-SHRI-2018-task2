@@ -1,0 +1,28 @@
+@import "variables"
+
+.header
+  border-bottom: 1px solid #f0f0f0
+  height: 90px
+  width: 100%
+
+  &__ul
+    display: flex
+    flex-flow: nowrap row
+    align-items: center
+    height: 100%
+    width: 450px
+
+  &__li
+    padding-right: 28px
+
+    &_logo
+      padding-right: 52px
+
+  &__a
+    font-weight: bold
+    opacity: 0.5
+    transition: .4s
+    color: #333
+
+    &_active
+      opacity: 1

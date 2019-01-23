@@ -1,0 +1,177 @@
+@import "variables"
+
+.scripts
+  grid-area: scripts
+  display: flex
+  flex-direction: row
+  flex-flow: wrap
+  align-items: center
+  justify-content: space-between
+  margin-left: 26px
+
+  &__title
+    flex: 1
+    line-height: 20px
+    font-size: 18px
+    color: #333
+    margin: 30px 0 20px 0
+
+  &__scripts-btns
+    flex: 0 auto
+    transition: .5s
+    margin: 7px 33px 0 0
+
+  &__scripts-btn-prev, &__scripts-btn-next
+    cursor: pointer
+    transition: .2s
+
+    &:first-child
+      margin-right: 17px
+
+    &:last-child
+      transform: rotate(180deg)
+      transform-origin: 50% 50%
+
+    &_disabled
+      opacity: 0.3
+
+  &__ul
+    height: 350px
+    overflow: hidden
+    column-width: 645px
+    column-gap: 15px
+    column-fill: auto
+    margin: -7.5px -5px -7.5px -5px
+
+  &__li
+    background-color: $block-bg
+    border-radius: $block-radius
+    cursor: pointer
+    display: inline-block
+    vertical-align: top
+    height: 70px
+    padding: 15px
+    margin: 7.5px 5px 7.5px 5px
+    transition: .2s
+    width: 170px
+    color: #333
+    font-size: 14px
+    letter-spacing: 0
+    text-align: left
+    font-weight: bold
+    position: relative
+
+    p
+      position: absolute
+      bottom: 15px
+      line-height: 1.2
+
+      span
+        font-family: ArialMT
+        font-size: 12px
+        font-weight: normal
+        color: #858585
+        letter-spacing: 0
+        text-align: left
+
+    &:hover
+      background: #fff
+      box-shadow: 0 2px 6px 0 rgba(197,186,186,.5)
+
+.devices
+  grid-area: devices
+  display: flex
+  flex-direction: row
+  flex-flow: wrap
+  align-items: center
+  margin: 30px 0 0 0
+
+  &__title
+    flex: 0 0 auto
+    color: #333
+    font-size: 18px
+
+  &__filters-ul
+    flex: 1
+    display: flex
+    flex-flow: row nowrap
+    margin: 0 0 0 10px
+
+  &__filter-li
+    background: $block-bg
+    border-radius: $block-radius
+    font-size: 13px
+    font-weight: bold
+    cursor: pointer
+    margin: 0 5px
+    padding: 7px 11px 8px 15px
+    transition: .2s
+
+    &.active
+      background: #ffd93e
+
+  &__devices-btns
+    flex: 0 auto
+    opacity: 1
+    transition: .5s
+    margin: 7px 33px 0 0
+
+    &_previous, &_next
+      cursor: pointer
+      outline: none
+      transition: .2s
+
+      &:first-child
+        margin-right: 18px
+
+      &:last-child
+        transform: rotate(180deg)
+        transform-origin: 50% 50%
+
+    &_disabled
+      cursor: default
+      opacity: 0.3
+
+  .devices-list
+    overflow: hidden
+    margin-top: 20px
+    height: 125px
+    width: calc(100% + 80px)
+    display: flex
+    flex-flow: row nowrap
+
+    &__li
+      background: $block-bg
+      border-radius: $block-radius
+      flex: 1 0 170px
+      display: flex
+      flex-flow: column nowrap
+      justify-content: flex-end
+      height: 90px
+      margin-right: 15px
+      padding: 15px
+      transition: .2s
+      cursor: pointer
+      font-weight: bold
+      color: #333
+      font-size: 14px
+      letter-spacing: 0
+      text-align: left
+      line-height: 1.3
+
+      &:hover
+        background: #fff
+        box-shadow: 0 2px 6px 0 rgba(197,186,186,.5)
+
+      span
+        color: #858585
+        font-size: 12px
+        letter-spacing: 0
+        font-weight: normal
+        text-align: left
+
+      &_hidden
+        display: none
+
+      .modal-block-slider
+        display: none

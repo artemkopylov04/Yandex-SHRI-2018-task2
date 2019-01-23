@@ -1,0 +1,121 @@
+@import "variables"
+
+
+main
+  flex: 1
+  display: grid
+  grid-template-columns: 630px 686px
+  grid-template-rows: 400px auto
+  grid-template-areas: "main-block scripts" "devices devices"
+
+.main-block
+  grid-area: main-block
+
+  &__title
+    color: #333
+    font-size: 18px
+    line-height: 20px
+    margin: 30px 0 20px 0
+
+  &__content
+    position: relative
+    padding-left: 25px
+    height: 330px
+    background: url("../../dist/src/imgs/bg@2x.png") 0 0 no-repeat
+    background-size: cover
+    border-radius: 20px
+
+
+  &__greeting
+    font-size: 27px
+    color: #333333
+    padding-top: 26px
+
+  &__p_info
+    font-size: 14px
+    color: #333333
+    padding-top: 10px
+
+  &__temperature
+    margin-top: 27px
+    width: 200px
+    display: grid
+    grid-template-columns: 80px auto
+    grid-template-rows: auto
+
+    &_home-title, &_outside-title
+      font-size:  14px
+      color: #858585
+
+    &_home, &_outside
+      font-size: 36px
+      line-height: 1.5
+
+  &__blocks-container
+    height: 330px
+    position: absolute
+    top: 0
+    right: 20px
+    width: 200px
+
+  &__parent-scroller
+    height: 100%
+    width: 100%
+    overflow: hidden
+
+  &__block-list
+    height: 100%
+    width: 100%
+    box-sizing: content-box
+    overflow-y: scroll
+    padding-right: 20px
+
+  &__li
+    background-color: $block-bg
+    border-radius: $block-radius
+    cursor: pointer
+    display: flex
+    flex-flow: nowrap column
+    height: 90px
+    justify-content: flex-end
+    margin-top: 15px
+    padding: 15px
+    line-height: 18px
+    font-weight: bold
+    width: 170px
+    font-size: 14px
+    color: #333333
+
+    &:hover
+      background: #fff
+      box-shadow: 0 2px 6px 0 rgba(197,186,186,.5)
+
+    &:first-child
+      margin-top: 20px
+
+    &:last-child
+      margin-bottom: 20px
+
+    span
+      font-family: ArialMT
+      font-size: 12px
+      font-weight: normal
+      color: #858585
+      letter-spacing: 0
+      text-align: left
+
+    &:nth-child(3)
+      position: relative
+
+      //иконка на третьем блоке
+      &:before
+        content: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M8 1c.412 0 .679.168 1.018.508l5.726 5.725a.875.875 0 1 1-1.238 1.238L8 2.964 2.494 8.471a.875.875 0 1 1-1.238-1.238l5.746-5.746C7.335 1.155 7.588 1 8 1zm0 6c.412 0 .679.168 1.018.508l5.726 5.725a.875.875 0 1 1-1.238 1.238L8 8.964l-5.506 5.507a.875.875 0 1 1-1.238-1.238l5.746-5.746C7.335 7.155 7.588 7 8 7z' id='a'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23F8F8F8' d='M-540-538H826v768H-540z'/%3E%3Cg opacity='.3'%3E%3Cpath d='M0 0h16v16H0z'/%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cuse fill='%23000' fill-rule='nonzero' xlink:href='%23a'/%3E%3Cg mask='url(%23b)' fill='%23333'%3E%3Cpath d='M-82-57H98V73H-82z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+        opacity: 1
+        position: absolute
+        top: 12px
+        text-align: center
+        transition: .5s
+        width: 165px
+
+      &.active:before
+        opacity: 0

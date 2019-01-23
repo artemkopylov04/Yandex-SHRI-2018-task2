@@ -1,3 +1,3 @@
 import '../css/reset.css';
-import '../sass/main.sass';
+import '../sass/index.sass';
 import './index.js';
