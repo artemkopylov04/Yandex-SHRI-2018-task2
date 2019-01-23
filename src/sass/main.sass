@@ -3,8 +3,9 @@ $block-radius: 20px
 
 body
   font-family: "Arial Rounded MT Bold", Helvetica, Arial, sans-serif
-  width: 100%
   overflow: hidden
+  width: 1366px
+  margin: 0 auto
 
 a
   color: #000
@@ -12,8 +13,7 @@ a
   text-decoration: none
 
 .wrapper
-  width: 1296px
-  margin: 0 auto
+  margin: 0 40px
   display: flex
   flex-direction: column
   min-height: 100vh
@@ -27,9 +27,14 @@ a
     display: flex
     flex-flow: nowrap row
     align-items: center
-    justify-content: space-between
     height: 100%
-    width: 420px
+    width: 450px
+
+  &__li
+    padding-right: 28px
+
+    &_logo
+      padding-right: 52px
 
   &__a
     font-weight: bold
@@ -45,8 +50,8 @@ a
 main
   flex: 1
   display: grid
-  grid-template-columns: 635px 661px
-  grid-template-rows: auto
+  grid-template-columns: 630px 686px
+  grid-template-rows: 400px auto
   grid-template-areas: "main-block scripts" "devices devices"
 
 .main-block
@@ -56,11 +61,11 @@ main
     color: #333
     font-size: 18px
     line-height: 20px
-    margin: 20px auto
+    margin: 30px 0 20px 0
 
   &__content
     position: relative
-    padding-left: 20px
+    padding-left: 25px
     height: 330px
     background: url("../../dist/src/imgs/bg@2x.png") 0 0 no-repeat
     background-size: cover
@@ -68,14 +73,20 @@ main
 
 
   &__greeting
-    padding-top: 20px
-    line-height: 1.5
+    font-size: 27px
+    color: #333333
+    padding-top: 26px
+
+  &__p_info
+    font-size: 14px
+    color: #333333
+    padding-top: 10px
 
   &__temperature
-    margin-top: 30px
+    margin-top: 27px
     width: 200px
     display: grid
-    grid-template-columns: auto auto
+    grid-template-columns: 80px auto
     grid-template-rows: auto
 
     &_home-title, &_outside-title
@@ -89,7 +100,7 @@ main
   &__blocks-container
     height: 330px
     position: absolute
-    top: 0px
+    top: 0
     right: 20px
     width: 200px
 
@@ -112,10 +123,14 @@ main
     display: flex
     flex-flow: nowrap column
     height: 90px
-    justify-content: space-between
+    justify-content: flex-end
     margin-top: 15px
     padding: 15px
+    line-height: 18px
+    font-weight: bold
     width: 170px
+    font-size: 14px
+    color: #333333
 
     &:hover
       background: #fff
@@ -141,9 +156,10 @@ main
         content: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M8 1c.412 0 .679.168 1.018.508l5.726 5.725a.875.875 0 1 1-1.238 1.238L8 2.964 2.494 8.471a.875.875 0 1 1-1.238-1.238l5.746-5.746C7.335 1.155 7.588 1 8 1zm0 6c.412 0 .679.168 1.018.508l5.726 5.725a.875.875 0 1 1-1.238 1.238L8 8.964l-5.506 5.507a.875.875 0 1 1-1.238-1.238l5.746-5.746C7.335 7.155 7.588 7 8 7z' id='a'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23F8F8F8' d='M-540-538H826v768H-540z'/%3E%3Cg opacity='.3'%3E%3Cpath d='M0 0h16v16H0z'/%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cuse fill='%23000' fill-rule='nonzero' xlink:href='%23a'/%3E%3Cg mask='url(%23b)' fill='%23333'%3E%3Cpath d='M-82-57H98V73H-82z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
         opacity: 1
         position: absolute
+        top: 12px
         text-align: center
         transition: .5s
-        width: 170px
+        width: 165px
 
       &.active:before
         opacity: 0
@@ -155,25 +171,26 @@ main
   flex-flow: wrap
   align-items: center
   justify-content: space-between
-  margin-left: 20px
+  margin-left: 26px
 
   &__title
     flex: 1
     line-height: 20px
     font-size: 18px
     color: #333
-    margin: 20px auto
+    margin: 30px 0 20px 0
 
   &__scripts-btns
     flex: 0 auto
     transition: .5s
+    margin: 7px 33px 0 0
 
   &__scripts-btn-prev, &__scripts-btn-next
     cursor: pointer
     transition: .2s
 
     &:first-child
-      margin-right: 15px
+      margin-right: 17px
 
     &:last-child
       transform: rotate(180deg)
@@ -188,7 +205,7 @@ main
     column-width: 645px
     column-gap: 15px
     column-fill: auto
-    margin: -7.5px
+    margin: -7.5px -5px -7.5px -5px
 
   &__li
     background-color: $block-bg
@@ -198,7 +215,7 @@ main
     vertical-align: top
     height: 70px
     padding: 15px
-    margin: 7.5px
+    margin: 7.5px 5px 7.5px 5px
     transition: .2s
     width: 170px
     color: #333
@@ -206,12 +223,18 @@ main
     letter-spacing: 0
     text-align: left
     font-weight: bold
+    position: relative
 
-    span
-      color: #858585
-      font-size: 12px
-      letter-spacing: 0
-      text-align: left
+    p
+      position: absolute
+      bottom: 15px
+      line-height: 1.2
+
+      span
+        color: #858585
+        font-size: 12px
+        letter-spacing: 0
+        text-align: left
 
     &:hover
       background: #fff
@@ -223,18 +246,18 @@ main
   flex-direction: row
   flex-flow: wrap
   align-items: center
+  margin: 30px 0 0 0
 
   &__title
     flex: 0 0 auto
     color: #333
     font-size: 18px
-    line-height: 20px
-    margin: 20px 20px 20px 0
 
   &__filters-ul
     flex: 1
     display: flex
     flex-flow: row nowrap
+    margin: 0 0 0 10px
 
   &__filter-li
     background: $block-bg
@@ -253,6 +276,7 @@ main
     flex: 0 auto
     opacity: 1
     transition: .5s
+    margin: 7px 33px 0 0
 
     &_previous, &_next
       cursor: pointer
@@ -260,7 +284,7 @@ main
       transition: .2s
 
       &:first-child
-        margin-right: 15px
+        margin-right: 18px
 
       &:last-child
         transform: rotate(180deg)
@@ -272,6 +296,7 @@ main
 
   .devices-list
     overflow: hidden
+    margin-top: 20px
     height: 125px
     width: calc(100% + 80px)
     display: flex
@@ -318,12 +343,13 @@ footer
     display: flex
 
     &__li
-      padding: 0 10px
+      padding: 0 17px 0 0
       color: #858585
 
       &:last-child
         cursor: default
         margin-left: auto
+        padding: 0
 
     &__a
       color: #858585
