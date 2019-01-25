@@ -23,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     btnPrev.onclick = function () {
         positionScriptsCarousel = Math.min(positionScriptsCarousel + widthScenariosDiv, 0);
-        console.log(positionScriptsCarousel);
+
         btnNext.classList.remove("scripts__scripts-btn-next_disabled");
+
         if (!positionScriptsCarousel) {
             this.classList.add("scripts__scripts-btn-prev_disabled");
         }
@@ -35,9 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         positionScriptsCarousel = Math.max(positionScriptsCarousel - widthScenariosDiv,
             -widthScenariosDiv * Math.ceil(scripts.length/9 - 1));
-        console.log(Math.ceil(scripts.length/9));
+
         btnPrev.classList.remove("scripts__scripts-btn-prev_disabled");
-        if (positionScriptsCarousel === -widthScenariosDiv * parseInt(scripts.length/9 - 1)) {
+
+        if (positionScriptsCarousel === -widthScenariosDiv * Math.ceil(scripts.length/9 - 1)) {
             this.classList.add("scripts__scripts-btn-next_disabled");
         }
         scriptsContainer.style.marginLeft = positionScriptsCarousel + 'px';

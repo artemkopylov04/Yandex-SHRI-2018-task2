@@ -10,7 +10,7 @@
 <script type="text/javascript" src="bundle.js"></script>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <div class="fixed-bg"></div>
-<div id="modal-block" class="modal-block">
+<div class="modal-block">
     <div class="modal-block__modal-info"></div>
     <div class="modal-block__modal-btns">
         <div class="modal-block__modal-btns_apply">Применить</div>
@@ -155,33 +155,33 @@
                 <li class="devices-list__li devices-list__li_kitchen">
                         Xiaomi Yeelight LED Smart Bulb<br><span>Включено</span>
                     <div class="modal-block-slider modal-block-slider_temperature">
-                        <ul class="modal-block-slider-temperature__ul">
-                            <li class="modal-block-slider-temperature__li_manually modal-block-slider-temperature__li_active">Вручную</li>
-                            <li class="modal-block-slider-temperature__li_cold">Холодно</li>
-                            <li class="modal-block-slider-temperature__li_warm">Тепло</li>
-                            <li class="modal-block-slider-temperature__li_hot modal-block-slider-temperature__li_last">Жарко</li>
+                        <ul class="modal-block__ul modal-block__ul_temperature">
+                            <li class="modal-block__li modal-block-slider-temperature__li_manually modal-block__li_active">Вручную</li>
+                            <li class="modal-block__li modal-block-slider-temperature__li_cold">Холодно</li>
+                            <li class="modal-block__li modal-block-slider-temperature__li_warm">Тепло</li>
+                            <li class="modal-block__li modal-block-slider-temperature__li_hot modal-block__li_last">Жарко</li>
                         </ul>
-                        <form class="modal-block-slider-temperature__form">
-                            <input type="range" min="-10" max="30" value="23" class="modal-block-slider-temperature__input">
-                            <output name="OutputTemp" class="modal-block-slider-temperature__output_temp"></output>
-                            <output class="modal-block-slider-temperature__output_min"><p></p></output>
-                            <output class="modal-block-slider-temperature__output_max"><p></p></output>
+                        <form class="modal-block__form modal-block__form_temperature">
+                            <input type="range" value="23" min="-10" max="30" class="modal-block-slider-temperature__input"/>
+                            <output class="modal-block__output_temp">+20</output>
+                            <output class="modal-block__output_temp-min"></output>
+                            <output class="modal-block__output_temp-max"></output>
                         </form>
                     </div>
                 </li>
                 <li class="devices-list__li devices-list__li_kitchen">
                         D-Link Omna 180 Cam<br><span>Включится в 17:00</span>
                     <div class="modal-block-slider modal-block-slider_light">
-                        <ul class="modal-block-slider-light__ul">
-                            <li class="modal-block-slider-light__li_manually modal-block-slider-light__li_active">Вручную</li>
-                            <li class="modal-block-slider-light__li_day">Дневной свет</li>
-                            <li class="modal-block-slider-light__li_evening">Вечерний свет<</li>
-                            <li class="modal-block-slider-light__li_sunrise">Рассвет</li>
+                        <ul class="modal-block__ul modal-block__ul_light">
+                            <li class="modal-block__li modal-block-slider-light__li_manually modal-block__li_active">Вручную</li>
+                            <li class="modal-block__li modal-block-slider-light__li_day">Дневной свет</li>
+                            <li class="modal-block__li modal-block-slider-light__li_evening">Вечерний свет<</li>
+                            <li class="modal-block__li modal-block-slider-light__li_sunrise">Рассвет</li>
                         </ul>
-                        <form class="modal-block-slider-light__form">
+                        <form class="modal-block__form modal-block__form_light">
                             <input type="range" min="0" max="100" value="23" class="modal-block-slider-light__input">
-                            <output class="output-min output-light"><p></p></output>
-                            <output class="output-max output-light"><p></p></output>
+                            <output class="modal-block__output_light-min"></output>
+                            <output class="modal-block__output_light-max"></output>
                         </form>
                     </div>
                 </li>
@@ -190,9 +190,9 @@
                     <div class="modal-block-slider modal-block-slider_floor-temp">
                         <form class="modal-block-slider-floor-temp__form">
                             <svg width="221px" height="221px" viewBox="0 0 221 221" class="modal-block-slider-floor-temp__svg">
-                                <path class="modal-block-slider-floor-temp__path_black" fill="none" stroke="#000000" stroke-width="21" stroke-dasharray="none"></path>
-                                <path class="modal-block-slider-floor-temp__path_orange" fill="none" stroke="#F5A623" stroke-width="22" stroke-dasharray="none"></path>
-                                <path class="modal-block-slider-floor-temp__path_dasharray" fill="none" stroke="#FFF" stroke-width="22" stroke-dasharray="2.5"></path>
+                                <path d="" class="modal-block-slider-floor-temp__path_black" fill="none" stroke="#000000" stroke-width="21" stroke-dasharray="none"></path>
+                                <path d="" class="modal-block-slider-floor-temp__path_orange" fill="none" stroke="#F5A623" stroke-width="22" stroke-dasharray="none"></path>
+                                <path d="" class="modal-block-slider-floor-temp__path_dasharray" fill="none" stroke="#FFF" stroke-width="22" stroke-dasharray="2.5"></path>
                             </svg>
                             <div class="modal-block-slider-floor-temp__turner" id="div-floor-slider">
                                 <input type="range" orient="circular" min="20" max="30" step="1" value="20" class="modal-block-slider-floor-temp__input"/>

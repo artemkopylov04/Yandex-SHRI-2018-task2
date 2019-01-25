@@ -25,6 +25,8 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-nightly": "^1.7.3"
+  },
   "browserslist": "> 0.25%"
 }

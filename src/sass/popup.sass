@@ -1,0 +1,55 @@
+@import "variables"
+
+.modal-block
+  display: none
+  opacity: 0
+  background: $block-bg
+  border-radius: $block-radius
+  height: 238px
+  width: 630px
+  position: absolute
+  transition-timing-function: ease-in
+  transform-origin: left top
+  transition: .5s
+  z-index: 1000
+  transform: scale(.1)
+
+  &_active
+    display: block
+    opacity: 1
+    transform: translate(-50%,-50%) scale(1)
+    top: 50% !important
+    left: 50% !important
+
+  &__modal-info
+    display: block
+    height: 100%
+    opacity: 1
+    transition: .2s
+
+  &__modal-btns
+    display: flex
+    flex-flow: wrap row
+    justify-content: space-between
+    margin-top: 21px
+    opacity: 1
+    transition: .2s
+    width: 100%
+
+    &_close
+      background: #fff
+      border-radius: $block-radius
+      cursor: pointer
+      height: 60px
+      line-height: 60px
+      text-align: center
+      width: 300px
+
+    &_apply
+      background: #ffd93e
+      border-radius: $block-radius
+      cursor: pointer
+      height: 60px
+      line-height: 60px
+      text-align: center
+      width: 300px
