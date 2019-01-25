@@ -81,19 +81,51 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/entry.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./dist/src/imgs/bg@1x.png":
+/*!*********************************!*\
+  !*** ./dist/src/imgs/bg@1x.png ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/src/imgs/bg@1x.png";
+
+/***/ }),
+
+/***/ "./dist/src/imgs/bg@2x.png":
+/*!*********************************!*\
+  !*** ./dist/src/imgs/bg@2x.png ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dist/src/imgs/bg@2x.png";
+
+/***/ }),
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/sass/index.sass":
 /*!************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/sass/index.sass ***!
   \************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/sass-loader/lib/loader.js):\\nError: Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime (68)\\nFor more information on which environments are supported please see:\\nhttps://github.com/sass/node-sass/releases/tag/v4.11.0\\n    at module.exports (C:\\\\Users\\\\Артем\\\\WebstormProjects\\\\Yandex-SHRI-2018-task2\\\\node_modules\\\\node-sass\\\\lib\\\\binding.js:13:13)\\n    at Object.<anonymous> (C:\\\\Users\\\\Артем\\\\WebstormProjects\\\\Yandex-SHRI-2018-task2\\\\node_modules\\\\node-sass\\\\lib\\\\index.js:14:35)\\n    at Module._compile (C:\\\\Users\\\\Артем\\\\WebstormProjects\\\\Yandex-SHRI-2018-task2\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:178:30)\\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:748:10)\\n    at Module.load (internal/modules/cjs/loader.js:629:32)\\n    at tryModuleLoad (internal/modules/cjs/loader.js:572:12)\\n    at Function.Module._load (internal/modules/cjs/loader.js:564:3)\\n    at Module.require (internal/modules/cjs/loader.js:666:17)\\n    at require (C:\\\\Users\\\\Артем\\\\WebstormProjects\\\\Yandex-SHRI-2018-task2\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:159:20)\\n    at Object.sassLoader (C:\\\\Users\\\\Артем\\\\WebstormProjects\\\\Yandex-SHRI-2018-task2\\\\node_modules\\\\sass-loader\\\\lib\\\\loader.js:46:72)\");\n\n//# sourceURL=webpack:///./src/sass/index.sass?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var urlEscape = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/url-escape.js */ "./node_modules/css-loader/dist/runtime/url-escape.js");
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../../dist/src/imgs/bg@2x.png */ "./dist/src/imgs/bg@2x.png"));
+var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__(/*! ../../dist/src/imgs/bg@1x.png */ "./dist/src/imgs/bg@1x.png"));
+var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__(/*! ../Icons/Arrow_Right/M_Copy@1x.svg */ "./src/Icons/Arrow_Right/M_Copy@1x.svg"));
+
+// Module
+exports.push([module.i, ".header {\n  border-bottom: 1px solid #f0f0f0;\n  height: 90px;\n  width: 100%; }\n  .header__ul {\n    display: flex;\n    flex-flow: nowrap row;\n    align-items: center;\n    height: 100%;\n    width: 450px; }\n  .header__li {\n    padding-right: 28px; }\n    .header__li_logo {\n      padding-right: 52px; }\n  .header__a {\n    font-weight: bold;\n    opacity: 0.5;\n    transition: .4s;\n    color: #333; }\n    .header__a_active {\n      opacity: 1; }\n\nmain {\n  flex: 1;\n  display: grid;\n  grid-template-columns: 630px 686px;\n  grid-template-rows: 400px auto;\n  grid-template-areas: \"main-block scripts\" \"devices devices\"; }\n\n.main-block {\n  grid-area: main-block; }\n  .main-block__title {\n    color: #333;\n    font-size: 18px;\n    line-height: 20px;\n    margin: 30px 0 20px 0; }\n  .main-block__content {\n    position: relative;\n    padding-left: 25px;\n    height: 330px;\n    background: url(" + ___CSS_LOADER_URL___0___ + ") 0 0 no-repeat;\n    background-size: cover;\n    border-radius: 20px; }\n  .main-block__greeting {\n    font-size: 27px;\n    color: #333333;\n    padding-top: 26px; }\n  .main-block__p_info {\n    font-size: 14px;\n    color: #333333;\n    padding-top: 10px; }\n  .main-block__temperature {\n    margin-top: 27px;\n    width: 200px;\n    display: grid;\n    grid-template-columns: 80px auto;\n    grid-template-rows: auto; }\n    .main-block__temperature_home-title, .main-block__temperature_outside-title {\n      font-size: 14px;\n      color: #858585; }\n    .main-block__temperature_home, .main-block__temperature_outside {\n      font-size: 36px;\n      line-height: 1.5; }\n  .main-block__blocks-container {\n    height: 330px;\n    position: absolute;\n    top: 0;\n    right: 20px;\n    width: 200px; }\n  .main-block__parent-scroller {\n    height: 100%;\n    width: 100%;\n    overflow: hidden; }\n  .main-block__block-list {\n    height: 100%;\n    width: 100%;\n    box-sizing: content-box;\n    overflow-y: scroll;\n    padding-right: 20px; }\n  .main-block__li {\n    background-color: #f7f7f7;\n    border-radius: 20px;\n    cursor: pointer;\n    display: flex;\n    flex-flow: nowrap column;\n    height: 90px;\n    justify-content: flex-end;\n    margin-top: 15px;\n    padding: 15px;\n    line-height: 18px;\n    font-weight: bold;\n    width: 170px;\n    font-size: 14px;\n    color: #333333; }\n    .main-block__li:hover {\n      background: #fff;\n      box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.5); }\n    .main-block__li:first-child {\n      margin-top: 20px; }\n    .main-block__li:last-child {\n      margin-bottom: 20px; }\n    .main-block__li span {\n      font-family: ArialMT;\n      font-size: 12px;\n      font-weight: normal;\n      color: #858585;\n      letter-spacing: 0;\n      text-align: left; }\n    .main-block__li:nth-child(3) {\n      position: relative; }\n      .main-block__li:nth-child(3):before {\n        content: url(\"data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpath d='M8 1c.412 0 .679.168 1.018.508l5.726 5.725a.875.875 0 1 1-1.238 1.238L8 2.964 2.494 8.471a.875.875 0 1 1-1.238-1.238l5.746-5.746C7.335 1.155 7.588 1 8 1zm0 6c.412 0 .679.168 1.018.508l5.726 5.725a.875.875 0 1 1-1.238 1.238L8 8.964l-5.506 5.507a.875.875 0 1 1-1.238-1.238l5.746-5.746C7.335 7.155 7.588 7 8 7z' id='a'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23F8F8F8' d='M-540-538H826v768H-540z'/%3E%3Cg opacity='.3'%3E%3Cpath d='M0 0h16v16H0z'/%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cuse fill='%23000' fill-rule='nonzero' xlink:href='%23a'/%3E%3Cg mask='url(%23b)' fill='%23333'%3E%3Cpath d='M-82-57H98V73H-82z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");\n        opacity: 1;\n        position: absolute;\n        top: 12px;\n        text-align: center;\n        transition: .5s;\n        width: 165px; }\n      .main-block__li:nth-child(3).main-block__li_active:before {\n        opacity: 0; }\n\n.scripts {\n  grid-area: scripts;\n  display: flex;\n  flex-direction: row;\n  flex-flow: wrap;\n  align-items: center;\n  justify-content: space-between;\n  margin-left: 26px; }\n  .scripts__title {\n    flex: 1;\n    line-height: 20px;\n    font-size: 18px;\n    color: #333;\n    margin: 30px 0 20px 0; }\n  .scripts__scripts-btns {\n    flex: 0 auto;\n    transition: .5s;\n    margin: 7px 33px 0 0; }\n  .scripts__scripts-btn-prev, .scripts__scripts-btn-next {\n    cursor: pointer;\n    transition: .2s;\n    opacity: 1; }\n    .scripts__scripts-btn-prev:first-child, .scripts__scripts-btn-next:first-child {\n      margin-right: 17px; }\n    .scripts__scripts-btn-prev:last-child, .scripts__scripts-btn-next:last-child {\n      transform: rotate(180deg);\n      transform-origin: 50% 50%; }\n    .scripts__scripts-btn-prev_disabled, .scripts__scripts-btn-next_disabled {\n      cursor: default;\n      opacity: 0.3; }\n  .scripts__scripts-container {\n    flex: 670px;\n    overflow: hidden;\n    height: 350px;\n    margin: -7.5px -5px -7.5px -5px; }\n  .scripts__ul {\n    height: 100%;\n    width: 655px;\n    column-width: 645px;\n    transition: .5s;\n    column-gap: 15px;\n    column-fill: auto; }\n  .scripts__li {\n    background-color: #f7f7f7;\n    border-radius: 20px;\n    cursor: pointer;\n    display: inline-block;\n    vertical-align: top;\n    height: 70px;\n    padding: 15px;\n    margin: 7.5px 5px 7.5px 5px;\n    transition: .2s;\n    width: 170px;\n    color: #333;\n    font-size: 14px;\n    letter-spacing: 0;\n    text-align: left;\n    font-weight: bold;\n    position: relative; }\n    .scripts__li p {\n      position: absolute;\n      bottom: 15px;\n      line-height: 1.2; }\n      .scripts__li p span {\n        font-family: ArialMT;\n        font-size: 12px;\n        font-weight: normal;\n        color: #858585;\n        letter-spacing: 0;\n        text-align: left; }\n    .scripts__li:hover {\n      background: #fff;\n      box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.5); }\n\n.devices {\n  grid-area: devices;\n  display: flex;\n  flex-direction: row;\n  flex-flow: wrap;\n  align-items: center;\n  margin: 30px 0 0 0; }\n  .devices__title {\n    flex: 0 0 auto;\n    color: #333;\n    font-size: 18px; }\n  .devices__filters-ul {\n    flex: 1;\n    display: flex;\n    flex-flow: row nowrap;\n    margin: 0 0 0 10px; }\n  .devices__filter-li {\n    background: #f7f7f7;\n    border-radius: 20px;\n    font-size: 13px;\n    font-weight: bold;\n    cursor: pointer;\n    margin: 0 5px;\n    padding: 7px 11px 8px 15px;\n    transition: .2s; }\n    .devices__filter-li_active {\n      background: #ffd93e; }\n  .devices__devices-btns {\n    flex: 0 auto;\n    opacity: 1;\n    transition: .5s;\n    margin: 7px 33px 0 0; }\n    .devices__devices-btns_previous, .devices__devices-btns_next {\n      cursor: pointer;\n      outline: none;\n      transition: .2s; }\n      .devices__devices-btns_previous:first-child, .devices__devices-btns_next:first-child {\n        margin-right: 18px; }\n      .devices__devices-btns_previous:last-child, .devices__devices-btns_next:last-child {\n        transform: rotate(180deg);\n        transform-origin: 50% 50%; }\n    .devices__devices-btns_disabled {\n      cursor: default;\n      opacity: 0.3; }\n  .devices .devices-list {\n    overflow: hidden;\n    margin-top: 20px;\n    height: 125px;\n    width: calc(100% + 80px);\n    display: flex;\n    flex-flow: row nowrap; }\n    .devices .devices-list__li {\n      background: #f7f7f7;\n      border-radius: 20px;\n      flex: 0 0 170px;\n      display: flex;\n      flex-flow: column nowrap;\n      justify-content: flex-end;\n      height: 90px;\n      margin-right: 15px;\n      padding: 15px;\n      transition: .2s;\n      cursor: pointer;\n      font-weight: bold;\n      color: #333;\n      font-size: 14px;\n      letter-spacing: 0;\n      text-align: left;\n      line-height: 1.3; }\n      .devices .devices-list__li:hover {\n        background: #fff;\n        box-shadow: 0 2px 6px 0 rgba(197, 186, 186, 0.5); }\n      .devices .devices-list__li span {\n        color: #858585;\n        font-size: 12px;\n        letter-spacing: 0;\n        font-weight: normal;\n        text-align: left; }\n      .devices .devices-list__li_hidden {\n        display: none; }\n      .devices .devices-list__li .modal-block-slider {\n        display: none; }\n\nfooter {\n  color: #858585;\n  font-size: 12px;\n  margin-bottom: 30px; }\n  footer .footer-list {\n    display: flex; }\n    footer .footer-list__li {\n      padding: 0 17px 0 0;\n      color: #858585; }\n      footer .footer-list__li:last-child {\n        cursor: default;\n        margin-left: auto;\n        padding: 0; }\n    footer .footer-list__a {\n      color: #858585;\n      outline: none;\n      text-decoration: none; }\n\n@media (max-width: 450px) {\n  body {\n    display: flex;\n    flex-flow: nowrap column;\n    overflow-x: hidden;\n    overflow-y: auto; }\n  header {\n    background: #fff;\n    border: 0;\n    height: 64px;\n    padding: 0 20px;\n    position: fixed;\n    width: calc(100% - 40px);\n    z-index: 1001; }\n    header .container {\n      justify-content: space-between; }\n      header .container img {\n        z-index: 2; }\n      header .container .bg {\n        background: #fff;\n        display: block;\n        height: 64px;\n        position: absolute;\n        right: 0;\n        width: 100%;\n        z-index: 1; }\n      header .container .nav-links {\n        background-color: #fff;\n        border-radius: 0 0 20px 20px;\n        box-shadow: 0 4px 6px 0 rgba(197, 186, 186, 0.5);\n        position: absolute;\n        right: 0;\n        top: 60px;\n        transform: translate3d(0, -126px, 0);\n        transition: .5s;\n        width: 100%;\n        z-index: -1; }\n        header .container .nav-links.active-menu {\n          transform: translate3d(0, 0, 0); }\n        header .container .nav-links .links {\n          align-items: center;\n          flex-flow: nowrap column;\n          padding: 0;\n          width: 100%; }\n          header .container .nav-links .links li {\n            padding: 10px 0; }\n      header .container .menu {\n        display: block; }\n  main {\n    margin: 0;\n    padding: 64px 0 0 0; }\n    main .section-main-top {\n      flex-flow: nowrap column; }\n      main .section-main-top .main-block {\n        flex: 1;\n        height: 282px;\n        padding: 0 20px; }\n        main .section-main-top .main-block .title {\n          display: none; }\n        main .section-main-top .main-block .main-div {\n          background: url(" + ___CSS_LOADER_URL___1___ + ") 39% 0% no-repeat;\n          border-radius: 20px;\n          height: 100%;\n          margin: 0; }\n          main .section-main-top .main-block .main-div .main-label h1 {\n            color: #333;\n            font-size: 18px;\n            line-height: 20px;\n            margin: 0; }\n          main .section-main-top .main-block .main-div .main-label p {\n            color: #333;\n            font-size: 12px;\n            line-height: 14px;\n            margin-bottom: 15px;\n            margin-top: 5px; }\n          main .section-main-top .main-block .main-div .main-label .home-temperature {\n            height: 28px;\n            width: 60px; }\n            main .section-main-top .main-block .main-div .main-label .home-temperature p {\n              color: #858585;\n              font-size: 12px;\n              margin-bottom: 5px;\n              margin-top: 0; }\n            main .section-main-top .main-block .main-div .main-label .home-temperature h1 {\n              color: #333;\n              font-size: 24px;\n              letter-spacing: 0;\n              line-height: 28px;\n              text-align: left; }\n          main .section-main-top .main-block .main-div .main-label .weather {\n            height: 28px;\n            width: 60px; }\n            main .section-main-top .main-block .main-div .main-label .weather p {\n              color: #858585;\n              font-size: 12px;\n              margin-bottom: 5px;\n              margin-top: 0; }\n            main .section-main-top .main-block .main-div .main-label .weather h1 {\n              color: #333;\n              font-size: 24px;\n              letter-spacing: 0;\n              line-height: 28px;\n              text-align: left; }\n            main .section-main-top .main-block .main-div .main-label .weather img {\n              right: -5px;\n              top: 23px;\n              width: 20px; }\n        main .section-main-top .main-block .blocks-scroll {\n          bottom: 20px;\n          height: 120px;\n          width: 335px; }\n          main .section-main-top .main-block .blocks-scroll .parent-scroller .child-scroller {\n            overflow-x: scroll;\n            overflow-y: hidden;\n            padding: 0; }\n            main .section-main-top .main-block .blocks-scroll .parent-scroller .child-scroller .scroller-ul .scroll-block-main-label {\n              flex: 1 0 170px;\n              margin: 0 20px 0 0; }\n              main .section-main-top .main-block .blocks-scroll .parent-scroller .child-scroller .scroller-ul .scroll-block-main-label:first-child {\n                margin: 0 20px 0 20px; }\n              main .section-main-top .main-block .blocks-scroll .parent-scroller .child-scroller .scroller-ul .scroll-block-main-label:last-child {\n                margin: 0 20px 0 0; }\n            main .section-main-top .main-block .blocks-scroll .parent-scroller .child-scroller .scroller-ul:after {\n              content: \"1\";\n              display: block;\n              opacity: 0;\n              width: 20px; }\n      main .section-main-top .scenarios {\n        flex: 1;\n        margin-top: 30px;\n        padding: 0 20px; }\n        main .section-main-top .scenarios .scenarios-btns {\n          display: none; }\n        main .section-main-top .scenarios .scenarios-nav {\n          margin: 0 -20px;\n          overflow: hidden; }\n          main .section-main-top .scenarios .scenarios-nav .scenarios-ul {\n            flex-flow: nowrap row;\n            height: 110px;\n            overflow: scroll;\n            width: 100%; }\n            main .section-main-top .scenarios .scenarios-nav .scenarios-ul .scenarios-div {\n              flex-flow: nowrap row;\n              margin: 0;\n              padding: 0; }\n              main .section-main-top .scenarios .scenarios-nav .scenarios-ul .scenarios-div .scenarios-block {\n                margin: 0 20px 0 0; }\n            main .section-main-top .scenarios .scenarios-nav .scenarios-ul:before {\n              content: \"\";\n              margin-right: 20px; }\n    main .section-devices {\n      padding: 0; }\n      main .section-devices .filters .devices-btns {\n        display: none; }\n      main .section-devices .filters .titleNfilters .title {\n        color: #333;\n        padding-left: 20px; }\n        main .section-devices .filters .titleNfilters .title h3 {\n          font-size: 18px; }\n      main .section-devices .filters .titleNfilters #filters-ul {\n        flex-flow: nowrap column;\n        height: 30px;\n        overflow: hidden;\n        padding-left: 20px;\n        position: absolute; }\n        main .section-devices .filters .titleNfilters #filters-ul li {\n          background: #fff;\n          border-radius: 0; }\n        main .section-devices .filters .titleNfilters #filters-ul li.active {\n          -moz-border-radius: 20px;\n          -webkit-border-radius: 20px;\n          align-self: flex-start;\n          background: #ffd93e;\n          border-radius: 20px;\n          order: -1; }\n          main .section-devices .filters .titleNfilters #filters-ul li.active:after {\n            background: url(" + ___CSS_LOADER_URL___2___ + ") 0 0 no-repeat;\n            background-size: 10px 10px;\n            content: \"\";\n            display: inline-block;\n            height: 10px;\n            margin-left: 5px;\n            transform: rotate(-90deg);\n            transform-origin: center;\n            transition: .5s;\n            width: 10px; }\n        main .section-devices .filters .titleNfilters #filters-ul.active {\n          overflow: visible; }\n          main .section-devices .filters .titleNfilters #filters-ul.active li.active:after {\n            transform: rotate(90deg); }\n      main .section-devices .devices {\n        margin-left: 0;\n        overflow: hidden;\n        width: 100%; }\n        main .section-devices .devices .devices-ul {\n          height: 125px;\n          overflow: scroll; }\n          main .section-devices .devices .devices-ul:before {\n            margin: 0 20px 0 0; }\n          main .section-devices .devices .devices-ul:after {\n            content: \"1\";\n            display: block;\n            opacity: 0;\n            width: 20px; }\n  .modal-space .modal-block .form-range-floor {\n    margin-top: 80px; }\n    .modal-space .modal-block .form-range-floor .svg-floor {\n      top: 153px;\n      left: 57px; }\n  .modal-space .modal-block .modal-html img {\n    display: none; }\n  .modal-space .modal-block .modal-html .text {\n    padding: 20px 20px 15px 20px; }\n    .modal-space .modal-block .modal-html .text b {\n      color: #333;\n      font-size: 18px; }\n    .modal-space .modal-block .modal-html .text span {\n      color: #333;\n      font-size: 12px; }\n  .modal-space .modal-block .modal-html .slider .div-slider-filters {\n    overflow: hidden; }\n  .modal-space .modal-block .modal-html .slider .slider-filters-ul {\n    padding-left: 15px;\n    width: 100vw; }\n  .modal-space .modal-block .modal-html .slider .slider-filters-item.active {\n    background: #ffd93e; }\n  .modal-space .modal-block .modal-html .slider .last {\n    display: none; }\n  .modal-space .modal-block .modal-html .slider form .output-range {\n    display: none; }\n  .modal-space .modal-block .modal-html .slider form .output-min {\n    left: 152px;\n    top: 315px; }\n    .modal-space .modal-block .modal-html .slider form .output-min.output-light {\n      left: 150px; }\n  .modal-space .modal-block .modal-html .slider form .output-max {\n    bottom: 0;\n    left: 152px;\n    top: 36px; }\n    .modal-space .modal-block .modal-html .slider form .output-max.output-light {\n      left: 150px; }\n  .modal-space .modal-block .modal-html .slider form .range-temperature, .modal-space .modal-block .modal-html .slider form .range-light {\n    background-image: linear-gradient(90deg, #068fff 2%, #ffd800 51%, #f76b1c 100%);\n    transform: rotate(-90deg) translate3d(-140px, -25px, 0);\n    width: 336px; }\n  .modal-space .modal-block .modal-html .slider form .range-light {\n    background-image: linear-gradient(85deg, #ffe682 2%, #ff9e00 98%); }\n  .modal-space .modal-block .modal-html .slider form .range-floor {\n    margin-top: 0; }\n  .modal-space .modal-block .modal-btns {\n    flex-flow: wrap column; }\n    .modal-space .modal-block .modal-btns .close, .modal-space .modal-block .modal-btns .apply {\n      margin-top: 15px;\n      max-width: 334px;\n      width: 100%; }\n  .modal-space .modal-block.active {\n    height: 492px;\n    width: 334px; }\n    .modal-space .modal-block.active.range-floor {\n      height: 492px;\n      margin-top: 0; }\n    .modal-space .modal-block.active .modal-btns {\n      bottom: -150px; }\n  .fixed-bg {\n    transition-delay: 0s; }\n  footer {\n    position: static; }\n    footer .footer {\n      height: 80px; }\n      footer .footer .footer-links {\n        flex-flow: wrap row;\n        justify-content: center;\n        padding: 0 20px; }\n        footer .footer .footer-links li {\n          line-height: 20px; }\n          footer .footer .footer-links li:last-child {\n            line-height: 30px;\n            margin: 0 auto; } }\n\n.modal-block {\n  display: none;\n  opacity: 0;\n  background: #f7f7f7;\n  border-radius: 20px;\n  height: 238px;\n  width: 630px;\n  position: absolute;\n  transition-timing-function: ease-in;\n  transform-origin: left top;\n  transition: .5s;\n  z-index: 1000;\n  transform: scale(0.1); }\n  .modal-block_active {\n    display: block;\n    opacity: 1;\n    transform: translate(-50%, -50%) scale(1);\n    top: 50% !important;\n    left: 50% !important; }\n  .modal-block__modal-info {\n    display: block;\n    height: 100%;\n    opacity: 1;\n    transition: .2s; }\n  .modal-block__modal-btns {\n    display: flex;\n    flex-flow: wrap row;\n    justify-content: space-between;\n    margin-top: 21px;\n    opacity: 1;\n    transition: .2s;\n    width: 100%; }\n    .modal-block__modal-btns_close {\n      background: #fff;\n      border-radius: 20px;\n      cursor: pointer;\n      height: 60px;\n      line-height: 60px;\n      text-align: center;\n      width: 300px; }\n    .modal-block__modal-btns_apply {\n      background: #ffd93e;\n      border-radius: 20px;\n      cursor: pointer;\n      height: 60px;\n      line-height: 60px;\n      text-align: center;\n      width: 300px; }\n\nbody {\n  font-family: \"Arial Rounded MT Bold\", Helvetica, Arial, sans-serif;\n  overflow: hidden;\n  width: 1366px;\n  margin: 0 auto; }\n\na {\n  color: #000;\n  outline: none;\n  text-decoration: none; }\n\n.wrapper {\n  margin: 0 40px;\n  display: flex;\n  flex-direction: column;\n  min-height: 100vh; }\n\n.fixed-bg {\n  background: transparent;\n  height: 100vh;\n  left: 0;\n  position: fixed;\n  top: 0;\n  visibility: hidden;\n  width: 100vw;\n  z-index: 1000; }\n  .fixed-bg_active {\n    background: rgba(51, 51, 51, 0.5);\n    visibility: visible; }\n\n.wrapper_blur {\n  filter: blur(2px); }\n\n.modal-block__ul_temperature, .modal-block__ul_light {\n  display: flex; }\n\n.modal-block__li {\n  background: #f7f7f7;\n  border-radius: 20px;\n  cursor: pointer;\n  font-size: 13px;\n  margin: 0 5px;\n  padding: 7px 11px 8px 15px;\n  transition: .2s; }\n  .modal-block__li_active {\n    background: #ffd93e; }\n\n.modal-block-slider-temperature__form {\n  position: relative; }\n\n.modal-block-slider-temperature__input {\n  -webkit-appearance: none;\n  appearance: none;\n  border-radius: 30px;\n  height: 60px;\n  margin: 25px;\n  outline: none;\n  width: 580px;\n  background-image: linear-gradient(90deg, #068fff 2%, #ffd800 51%, #f76b1c 100%); }\n\n.modal-block-slider-light__input {\n  -webkit-appearance: none;\n  appearance: none;\n  border-radius: 30px;\n  height: 60px;\n  margin: 25px;\n  outline: none;\n  width: 580px;\n  background-image: linear-gradient(85deg, #ffe682 2%, #ff9e00 98%); }\n\n.modal-block-slider-temperature__input, .modal-block-slider-light__input {\n  appearance: none;\n  cursor: pointer; }\n\n.modal-block-slider-temperature__input::-webkit-slider-thumb, .modal-block-slider-light__input::-webkit-slider-thumb {\n  -webkit-appearance: none;\n  appearance: none;\n  background: transparent;\n  border: 3px solid rgba(51, 51, 51, 0.1);\n  border-radius: 50%;\n  box-shadow: 0 0 0 4px #fff;\n  cursor: pointer;\n  height: 60px;\n  width: 60px; }\n\n.modal-block-slider-temperature__input::-moz-range-thumb, .modal-block-slider-light__input::-moz-range-thumb {\n  -moz-appearance: none;\n  appearance: none;\n  background: transparent;\n  border: 3px solid rgba(51, 51, 51, 0.1);\n  box-shadow: 0 0 0 4px #fff;\n  border-radius: 50%;\n  cursor: pointer;\n  height: 60px;\n  width: 60px; }\n\n.modal-block-slider-temperature__input::-moz-range-track, .modal-block-slider-light__input::-moz-range-track {\n  opacity: 0; }\n\n.modal-block__output_temp {\n  color: #333;\n  font-size: 36px;\n  letter-spacing: 0;\n  position: absolute;\n  right: 60px;\n  text-align: left;\n  top: 0; }\n\n.modal-block__output_temp-min {\n  color: #fff;\n  font-size: 18px;\n  left: 45px;\n  letter-spacing: 0;\n  line-height: 0;\n  pointer-events: none;\n  position: absolute;\n  text-align: left;\n  top: 36px; }\n\n.modal-block__output_light-min {\n  color: #fff;\n  font-size: 18px;\n  left: 45px;\n  letter-spacing: 0;\n  line-height: 0;\n  pointer-events: none;\n  position: absolute;\n  text-align: left;\n  top: 36px;\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='24px' height='24px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Eicon_sun%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Final' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='v1-2-1-home-dashboard' transform='translate(-464.000000, -404.000000)'%3E%3Cg id='status' transform='translate(39.000000, 195.000000)'%3E%3Cg id='Group' transform='translate(1.000000, 40.000000)'%3E%3Cg id='Widget-Copy' transform='translate(410.000000, 155.000000)'%3E%3Cg id='icon' transform='translate(14.000000, 14.000000)'%3E%3Cg id='sun' transform='translate(1.000000, 1.000000)' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Ccircle id='Oval' stroke-opacity='1' cx='11' cy='11' r='5'%3E%3C/circle%3E%3Cpath d='M11,1 L11,2' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M11,20 L11,21' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M3.92,3.92 L4.64,4.64' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M17.96,17.96 L18.78,18.78' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M0,11 L1,11' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M20,11 L21,11' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M3.82,18.08 L4.64,17.36' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M17.36,4.64 L18.08,3.82' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");\n  background-size: 36px 36px;\n  height: 36px;\n  width: 36px; }\n\n.modal-block__output_temp-max {\n  color: #fff;\n  font-size: 18px;\n  letter-spacing: 0;\n  line-height: 0;\n  pointer-events: none;\n  position: absolute;\n  right: 45px;\n  text-align: left;\n  top: 36px; }\n\n.modal-block__output_light-min {\n  color: #fff;\n  font-size: 18px;\n  letter-spacing: 0;\n  line-height: 0;\n  pointer-events: none;\n  position: absolute;\n  right: 45px;\n  text-align: left;\n  top: 36px;\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='24px' height='24px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Eicon_sun%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Final' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='v1-2-1-home-dashboard' transform='translate(-464.000000, -404.000000)'%3E%3Cg id='status' transform='translate(39.000000, 195.000000)'%3E%3Cg id='Group' transform='translate(1.000000, 40.000000)'%3E%3Cg id='Widget-Copy' transform='translate(410.000000, 155.000000)'%3E%3Cg id='icon' transform='translate(14.000000, 14.000000)'%3E%3Cg id='sun' transform='translate(1.000000, 1.000000)' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Ccircle id='Oval' stroke-opacity='1' cx='11' cy='11' r='5'%3E%3C/circle%3E%3Cpath d='M11,0 L11,2' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M11,20 L11,22' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M3.22,3.22 L4.64,4.64' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M17.36,17.36 L18.78,18.78' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M0,11 L2,11' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M20,11 L22,11' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M3.22,18.78 L4.64,17.36' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3Cpath d='M17.36,4.64 L18.78,3.22' id='Shape' stroke-opacity='1'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");\n  background-size: 36px 36px;\n  height: 36px;\n  width: 36px; }\n\n.modal-block-slider-floor-temp__form {\n  display: flex;\n  height: 220px;\n  justify-content: center; }\n\n.svg-floor {\n  position: absolute;\n  top: 92px;\n  left: 205px; }\n\n.input-range-div {\n  align-items: center;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  overflow: hidden;\n  position: relative;\n  width: 200px; }\n\n.modal-block-slider-floor-temp__input {\n  -webkit-appearance: none;\n  appearance: none;\n  background: url(\"data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='186px' height='186px' viewBox='0 0 186 186' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Ebackground%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3Ccircle id='path-1' cx='111' cy='111' r='89'%3E%3C/circle%3E%3Cfilter x='-3.9%25' y='-2.8%25' width='107.9%25' height='107.9%25' filterUnits='objectBoundingBox' id='filter-2'%3E%3CfeOffset dx='0' dy='2' in='SourceAlpha' result='shadowOffsetOuter1'%3E%3C/feOffset%3E%3CfeGaussianBlur stdDeviation='2' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3E%3C/feGaussianBlur%3E%3CfeColorMatrix values='0 0 0 0 0.524208121 0 0 0 0 0.475951723 0 0 0 0 0.279116418 0 0 0 0.446388134 0' type='matrix' in='shadowBlurOuter1'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Cg id='Final' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='v1-1-4-mobile-floor' transform='translate(-95.000000, -250.000000)'%3E%3Cg id='Group' transform='translate(0.000000, -44.000000)'%3E%3Cg id='Group-5' transform='translate(20.000000, 111.000000)'%3E%3Cg id='Group-4'%3E%3Cg id='round' transform='translate(57.000000, 163.000000)'%3E%3Cg id='Screen'%3E%3Cg id='background'%3E%3Cuse fill='black' fill-opacity='1' filter='url(%23filter-2)' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill='%23FEFEFE' fill-rule='evenodd' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\") no-repeat;\n  background-size: cover;\n  border-radius: 50%;\n  cursor: pointer;\n  height: 178px;\n  outline: none;\n  width: 178px; }\n\n.modal-block-slider-floor-temp__input::-webkit-slider-thumb {\n  opacity: 0; }\n\n.modal-block-slider-floor-temp__input::-moz-range-thumb, .input-range-floor::-moz-range-track {\n  opacity: 0; }\n\n.modal-block-slider-floor-temp__output {\n  font-size: 66px;\n  color: #333333;\n  letter-spacing: 0;\n  text-align: left;\n  position: absolute;\n  pointer-events: none; }\n", ""]);
+
+
 
 /***/ }),
 
@@ -104,7 +136,11 @@ eval("throw new Error(\"Module build failed (from ./node_modules/sass-loader/lib
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\\r\\n\\r\\nhtml, body, div, span, applet, object, iframe,\\r\\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\\r\\na, abbr, acronym, address, big, cite, code,\\r\\ndel, dfn, em, img, ins, kbd, q, s, samp,\\r\\nsmall, strike, strong, sub, sup, tt, var,\\r\\nb, u, i, center,\\r\\ndl, dt, dd, ol, ul, li,\\r\\nfieldset, form, label, legend,\\r\\ntable, caption, tbody, tfoot, thead, tr, th, td,\\r\\narticle, aside, canvas, details, embed,\\r\\nfigure, figcaption, footer, header, hgroup,\\r\\nmenu, nav, output, ruby, section, summary,\\r\\ntime, mark, audio, video {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n    border: 0;\\r\\n    vertical-align: baseline;\\r\\n}\\r\\n\\r\\n/* make sure to set some focus styles for accessibility */\\r\\n:focus {\\r\\n    outline: none;\\r\\n}\\r\\n\\r\\n/* HTML5 display-role reset for older browsers */\\r\\narticle, aside, details, figcaption, figure,\\r\\nfooter, header, hgroup, menu, nav, section {\\r\\n    display: block;\\r\\n}\\r\\n\\r\\nbody {\\r\\n    line-height: 1;\\r\\n}\\r\\n\\r\\nol, ul {\\r\\n    list-style: none;\\r\\n}\\r\\n\\r\\nblockquote, q {\\r\\n    quotes: none;\\r\\n}\\r\\n\\r\\nblockquote:before, blockquote:after,\\r\\nq:before, q:after {\\r\\n    content: '';\\r\\n    content: none;\\r\\n}\\r\\n\\r\\ntable {\\r\\n    border-collapse: collapse;\\r\\n    border-spacing: 0;\\r\\n}\\r\\n\\r\\ninput[type=search]::-webkit-search-cancel-button,\\r\\ninput[type=search]::-webkit-search-decoration,\\r\\ninput[type=search]::-webkit-search-results-button,\\r\\ninput[type=search]::-webkit-search-results-decoration {\\r\\n    -webkit-appearance: none;\\r\\n    -moz-appearance: none;\\r\\n}\\r\\n\\r\\ninput[type=search] {\\r\\n    -webkit-appearance: none;\\r\\n    -moz-appearance: none;\\r\\n    -webkit-box-sizing: content-box;\\r\\n    -moz-box-sizing: content-box;\\r\\n    box-sizing: content-box;\\r\\n}\\r\\n\\r\\ntextarea {\\r\\n    overflow: auto;\\r\\n    vertical-align: top;\\r\\n    resize: vertical;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.\\r\\n */\\r\\n\\r\\naudio,\\r\\ncanvas,\\r\\nvideo {\\r\\n    display: inline-block;\\r\\n    *display: inline;\\r\\n    *zoom: 1;\\r\\n    max-width: 100%;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Prevent modern browsers from displaying `audio` without controls.\\r\\n * Remove excess height in iOS 5 devices.\\r\\n */\\r\\n\\r\\naudio:not([controls]) {\\r\\n    display: none;\\r\\n    height: 0;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.\\r\\n * Known issue: no IE 6 support.\\r\\n */\\r\\n\\r\\n[hidden] {\\r\\n    display: none;\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using\\r\\n *    `em` units.\\r\\n * 2. Prevent iOS text size adjust after orientation change, without disabling\\r\\n *    user zoom.\\r\\n */\\r\\n\\r\\nhtml {\\r\\n    font-size: 100%; /* 1 */\\r\\n    -webkit-text-size-adjust: 100%; /* 2 */\\r\\n    -ms-text-size-adjust: 100%; /* 2 */\\r\\n}\\r\\n\\r\\n/**\\r\\n * Address `outline` inconsistency between Chrome and other browsers.\\r\\n */\\r\\n\\r\\na:focus {\\r\\n    outline: none;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Improve readability when focused and also mouse hovered in all browsers.\\r\\n */\\r\\n\\r\\na:active,\\r\\na:hover {\\r\\n    outline: none;\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.\\r\\n * 2. Improve image quality when scaled in IE 7.\\r\\n */\\r\\n\\r\\nimg {\\r\\n    border: 0; /* 1 */\\r\\n    -ms-interpolation-mode: bicubic; /* 2 */\\r\\n}\\r\\n\\r\\n/**\\r\\n * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.\\r\\n */\\r\\n\\r\\nfigure {\\r\\n    margin: 0;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Correct margin displayed oddly in IE 6/7.\\r\\n */\\r\\n\\r\\nform {\\r\\n    margin: 0;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Define consistent border, margin, and padding.\\r\\n */\\r\\n\\r\\nfieldset {\\r\\n    border: 1px solid #c0c0c0;\\r\\n    margin: 0 2px;\\r\\n    padding: 0.35em 0.625em 0.75em;\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Correct color not being inherited in IE 6/7/8/9.\\r\\n * 2. Correct text not wrapping in Firefox 3.\\r\\n * 3. Correct alignment displayed oddly in IE 6/7.\\r\\n */\\r\\n\\r\\nlegend {\\r\\n    border: 0; /* 1 */\\r\\n    padding: 0;\\r\\n    white-space: normal; /* 2 */\\r\\n    *margin-left: -7px; /* 3 */\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Correct font size not being inherited in all browsers.\\r\\n * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,\\r\\n *    and Chrome.\\r\\n * 3. Improve appearance and consistency in all browsers.\\r\\n */\\r\\n\\r\\nbutton,\\r\\ninput,\\r\\nselect,\\r\\ntextarea {\\r\\n    font-size: 100%; /* 1 */\\r\\n    margin: 0; /* 2 */\\r\\n    vertical-align: baseline; /* 3 */\\r\\n    *vertical-align: middle; /* 3 */\\r\\n}\\r\\n\\r\\n/**\\r\\n * Address Firefox 3+ setting `line-height` on `input` using `!important` in\\r\\n * the UA stylesheet.\\r\\n */\\r\\n\\r\\nbutton,\\r\\ninput {\\r\\n    line-height: normal;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\\r\\n * All other form control elements do not inherit `text-transform` values.\\r\\n * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.\\r\\n * Correct `select` style inheritance in Firefox 4+ and Opera.\\r\\n */\\r\\n\\r\\nbutton,\\r\\nselect {\\r\\n    text-transform: none;\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\\r\\n *    and `video` controls.\\r\\n * 2. Correct inability to style clickable `input` types in iOS.\\r\\n * 3. Improve usability and consistency of cursor style between image-type\\r\\n *    `input` and others.\\r\\n * 4. Remove inner spacing in IE 7 without affecting normal text inputs.\\r\\n *    Known issue: inner spacing remains in IE 6.\\r\\n */\\r\\n\\r\\nbutton,\\r\\nhtml input[type=\\\"button\\\"], /* 1 */\\r\\ninput[type=\\\"reset\\\"],\\r\\ninput[type=\\\"submit\\\"] {\\r\\n    -webkit-appearance: button; /* 2 */\\r\\n    cursor: pointer; /* 3 */\\r\\n    *overflow: visible;  /* 4 */\\r\\n}\\r\\n\\r\\n/**\\r\\n * Re-set default cursor for disabled elements.\\r\\n */\\r\\n\\r\\nbutton[disabled],\\r\\nhtml input[disabled] {\\r\\n    cursor: default;\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Address box sizing set to content-box in IE 8/9.\\r\\n * 2. Remove excess padding in IE 8/9.\\r\\n * 3. Remove excess padding in IE 7.\\r\\n *    Known issue: excess padding remains in IE 6.\\r\\n */\\r\\n\\r\\ninput[type=\\\"checkbox\\\"],\\r\\ninput[type=\\\"radio\\\"] {\\r\\n    box-sizing: border-box; /* 1 */\\r\\n    padding: 0; /* 2 */\\r\\n    *height: 13px; /* 3 */\\r\\n    *width: 13px; /* 3 */\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.\\r\\n * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome\\r\\n *    (include `-moz` to future-proof).\\r\\n */\\r\\n\\r\\ninput[type=\\\"search\\\"] {\\r\\n    -webkit-appearance: textfield; /* 1 */\\r\\n    -moz-box-sizing: content-box;\\r\\n    -webkit-box-sizing: content-box; /* 2 */\\r\\n    box-sizing: content-box;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Remove inner padding and search cancel button in Safari 5 and Chrome\\r\\n * on OS X.\\r\\n */\\r\\n\\r\\ninput[type=\\\"search\\\"]::-webkit-search-cancel-button,\\r\\ninput[type=\\\"search\\\"]::-webkit-search-decoration {\\r\\n    -webkit-appearance: none;\\r\\n}\\r\\n\\r\\n/**\\r\\n * Remove inner padding and border in Firefox 3+.\\r\\n */\\r\\n\\r\\nbutton::-moz-focus-inner,\\r\\ninput::-moz-focus-inner {\\r\\n    border: 0;\\r\\n    padding: 0;\\r\\n}\\r\\n\\r\\n/**\\r\\n * 1. Remove default vertical scrollbar in IE 6/7/8/9.\\r\\n * 2. Improve readability and alignment in all browsers.\\r\\n */\\r\\n\\r\\ntextarea {\\r\\n    overflow: auto; /* 1 */\\r\\n    vertical-align: top; /* 2 */\\r\\n}\\r\\n\\r\\n/**\\r\\n * Remove most spacing between table cells.\\r\\n */\\r\\n\\r\\ntable {\\r\\n    border-collapse: collapse;\\r\\n    border-spacing: 0;\\r\\n}\\r\\n\\r\\nhtml,\\r\\nbutton,\\r\\ninput,\\r\\nselect,\\r\\ntextarea {\\r\\n    color: #222;\\r\\n}\\r\\n\\r\\n\\r\\n::-moz-selection {\\r\\n    background: #b3d4fc;\\r\\n    text-shadow: none;\\r\\n}\\r\\n\\r\\n::selection {\\r\\n    background: #b3d4fc;\\r\\n    text-shadow: none;\\r\\n}\\r\\n\\r\\nimg {\\r\\n    vertical-align: middle;\\r\\n}\\r\\n\\r\\nfieldset {\\r\\n    border: 0;\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n}\\r\\n\\r\\ntextarea {\\r\\n    resize: vertical;\\r\\n}\\r\\n\\r\\n.chromeframe {\\r\\n    margin: 0.2em 0;\\r\\n    background: #ccc;\\r\\n    color: #000;\\r\\n    padding: 0.2em 0;\\r\\n}\\r\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/reset/reset.css?./node_modules/css-loader/dist/cjs.js");
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "\r\n\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    vertical-align: baseline;\r\n}\r\n\r\n/* make sure to set some focus styles for accessibility */\r\n:focus {\r\n    outline: none;\r\n}\r\n\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n    display: block;\r\n}\r\n\r\nbody {\r\n    line-height: 1;\r\n}\r\n\r\nol, ul {\r\n    list-style: none;\r\n}\r\n\r\nblockquote, q {\r\n    quotes: none;\r\n}\r\n\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n    content: '';\r\n    content: none;\r\n}\r\n\r\ntable {\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n}\r\n\r\ninput[type=search]::-webkit-search-cancel-button,\r\ninput[type=search]::-webkit-search-decoration,\r\ninput[type=search]::-webkit-search-results-button,\r\ninput[type=search]::-webkit-search-results-decoration {\r\n    -webkit-appearance: none;\r\n    -moz-appearance: none;\r\n}\r\n\r\ninput[type=search] {\r\n    -webkit-appearance: none;\r\n    -moz-appearance: none;\r\n    -webkit-box-sizing: content-box;\r\n    -moz-box-sizing: content-box;\r\n    box-sizing: content-box;\r\n}\r\n\r\ntextarea {\r\n    overflow: auto;\r\n    vertical-align: top;\r\n    resize: vertical;\r\n}\r\n\r\n/**\r\n * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.\r\n */\r\n\r\naudio,\r\ncanvas,\r\nvideo {\r\n    display: inline-block;\r\n    *display: inline;\r\n    *zoom: 1;\r\n    max-width: 100%;\r\n}\r\n\r\n/**\r\n * Prevent modern browsers from displaying `audio` without controls.\r\n * Remove excess height in iOS 5 devices.\r\n */\r\n\r\naudio:not([controls]) {\r\n    display: none;\r\n    height: 0;\r\n}\r\n\r\n/**\r\n * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.\r\n * Known issue: no IE 6 support.\r\n */\r\n\r\n[hidden] {\r\n    display: none;\r\n}\r\n\r\n/**\r\n * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using\r\n *    `em` units.\r\n * 2. Prevent iOS text size adjust after orientation change, without disabling\r\n *    user zoom.\r\n */\r\n\r\nhtml {\r\n    font-size: 100%; /* 1 */\r\n    -webkit-text-size-adjust: 100%; /* 2 */\r\n    -ms-text-size-adjust: 100%; /* 2 */\r\n}\r\n\r\n/**\r\n * Address `outline` inconsistency between Chrome and other browsers.\r\n */\r\n\r\na:focus {\r\n    outline: none;\r\n}\r\n\r\n/**\r\n * Improve readability when focused and also mouse hovered in all browsers.\r\n */\r\n\r\na:active,\r\na:hover {\r\n    outline: none;\r\n}\r\n\r\n/**\r\n * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.\r\n * 2. Improve image quality when scaled in IE 7.\r\n */\r\n\r\nimg {\r\n    border: 0; /* 1 */\r\n    -ms-interpolation-mode: bicubic; /* 2 */\r\n}\r\n\r\n/**\r\n * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.\r\n */\r\n\r\nfigure {\r\n    margin: 0;\r\n}\r\n\r\n/**\r\n * Correct margin displayed oddly in IE 6/7.\r\n */\r\n\r\nform {\r\n    margin: 0;\r\n}\r\n\r\n/**\r\n * Define consistent border, margin, and padding.\r\n */\r\n\r\nfieldset {\r\n    border: 1px solid #c0c0c0;\r\n    margin: 0 2px;\r\n    padding: 0.35em 0.625em 0.75em;\r\n}\r\n\r\n/**\r\n * 1. Correct color not being inherited in IE 6/7/8/9.\r\n * 2. Correct text not wrapping in Firefox 3.\r\n * 3. Correct alignment displayed oddly in IE 6/7.\r\n */\r\n\r\nlegend {\r\n    border: 0; /* 1 */\r\n    padding: 0;\r\n    white-space: normal; /* 2 */\r\n    *margin-left: -7px; /* 3 */\r\n}\r\n\r\n/**\r\n * 1. Correct font size not being inherited in all browsers.\r\n * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,\r\n *    and Chrome.\r\n * 3. Improve appearance and consistency in all browsers.\r\n */\r\n\r\nbutton,\r\ninput,\r\nselect,\r\ntextarea {\r\n    font-size: 100%; /* 1 */\r\n    margin: 0; /* 2 */\r\n    vertical-align: baseline; /* 3 */\r\n    *vertical-align: middle; /* 3 */\r\n}\r\n\r\n/**\r\n * Address Firefox 3+ setting `line-height` on `input` using `!important` in\r\n * the UA stylesheet.\r\n */\r\n\r\nbutton,\r\ninput {\r\n    line-height: normal;\r\n}\r\n\r\n/**\r\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\r\n * All other form control elements do not inherit `text-transform` values.\r\n * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.\r\n * Correct `select` style inheritance in Firefox 4+ and Opera.\r\n */\r\n\r\nbutton,\r\nselect {\r\n    text-transform: none;\r\n}\r\n\r\n/**\r\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\r\n *    and `video` controls.\r\n * 2. Correct inability to style clickable `input` types in iOS.\r\n * 3. Improve usability and consistency of cursor style between image-type\r\n *    `input` and others.\r\n * 4. Remove inner spacing in IE 7 without affecting normal text inputs.\r\n *    Known issue: inner spacing remains in IE 6.\r\n */\r\n\r\nbutton,\r\nhtml input[type=\"button\"], /* 1 */\r\ninput[type=\"reset\"],\r\ninput[type=\"submit\"] {\r\n    -webkit-appearance: button; /* 2 */\r\n    cursor: pointer; /* 3 */\r\n    *overflow: visible;  /* 4 */\r\n}\r\n\r\n/**\r\n * Re-set default cursor for disabled elements.\r\n */\r\n\r\nbutton[disabled],\r\nhtml input[disabled] {\r\n    cursor: default;\r\n}\r\n\r\n/**\r\n * 1. Address box sizing set to content-box in IE 8/9.\r\n * 2. Remove excess padding in IE 8/9.\r\n * 3. Remove excess padding in IE 7.\r\n *    Known issue: excess padding remains in IE 6.\r\n */\r\n\r\ninput[type=\"checkbox\"],\r\ninput[type=\"radio\"] {\r\n    box-sizing: border-box; /* 1 */\r\n    padding: 0; /* 2 */\r\n    *height: 13px; /* 3 */\r\n    *width: 13px; /* 3 */\r\n}\r\n\r\n/**\r\n * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.\r\n * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome\r\n *    (include `-moz` to future-proof).\r\n */\r\n\r\ninput[type=\"search\"] {\r\n    -webkit-appearance: textfield; /* 1 */\r\n    -moz-box-sizing: content-box;\r\n    -webkit-box-sizing: content-box; /* 2 */\r\n    box-sizing: content-box;\r\n}\r\n\r\n/**\r\n * Remove inner padding and search cancel button in Safari 5 and Chrome\r\n * on OS X.\r\n */\r\n\r\ninput[type=\"search\"]::-webkit-search-cancel-button,\r\ninput[type=\"search\"]::-webkit-search-decoration {\r\n    -webkit-appearance: none;\r\n}\r\n\r\n/**\r\n * Remove inner padding and border in Firefox 3+.\r\n */\r\n\r\nbutton::-moz-focus-inner,\r\ninput::-moz-focus-inner {\r\n    border: 0;\r\n    padding: 0;\r\n}\r\n\r\n/**\r\n * 1. Remove default vertical scrollbar in IE 6/7/8/9.\r\n * 2. Improve readability and alignment in all browsers.\r\n */\r\n\r\ntextarea {\r\n    overflow: auto; /* 1 */\r\n    vertical-align: top; /* 2 */\r\n}\r\n\r\n/**\r\n * Remove most spacing between table cells.\r\n */\r\n\r\ntable {\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n}\r\n\r\nhtml,\r\nbutton,\r\ninput,\r\nselect,\r\ntextarea {\r\n    color: #222;\r\n}\r\n\r\n\r\n::-moz-selection {\r\n    background: #b3d4fc;\r\n    text-shadow: none;\r\n}\r\n\r\n::selection {\r\n    background: #b3d4fc;\r\n    text-shadow: none;\r\n}\r\n\r\nimg {\r\n    vertical-align: middle;\r\n}\r\n\r\nfieldset {\r\n    border: 0;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\ntextarea {\r\n    resize: vertical;\r\n}\r\n\r\n.chromeframe {\r\n    margin: 0.2em 0;\r\n    background: #ccc;\r\n    color: #000;\r\n    padding: 0.2em 0;\r\n}\r\n", ""]);
+
+
 
 /***/ }),
 
@@ -116,7 +152,122 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return '@media ' + item[2] + '{' + content + '}';\n      } else {\n        return content;\n      }\n    }).join('');\n  }; // import a list of modules into the list\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (i = 0; i < modules.length; i++) {\n      var item = modules[i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || '';\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n  return '/*# ' + data + ' */';\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return '@media ' + item[2] + '{' + content + '}';
+      } else {
+        return content;
+      }
+    }).join('');
+  }; // import a list of modules into the list
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (i = 0; i < modules.length; i++) {
+      var item = modules[i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || '';
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+  return '/*# ' + data + ' */';
+}
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/url-escape.js":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/url-escape.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function escape(url, needQuotes) {
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || needQuotes) {
+    return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"';
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -127,7 +278,405 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n\nvar stylesInDom = {};\n\nvar\tmemoize = function (fn) {\n\tvar memo;\n\n\treturn function () {\n\t\tif (typeof memo === \"undefined\") memo = fn.apply(this, arguments);\n\t\treturn memo;\n\t};\n};\n\nvar isOldIE = memoize(function () {\n\t// Test for IE <= 9 as proposed by Browserhacks\n\t// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805\n\t// Tests for existence of standard globals is to allow style-loader\n\t// to operate correctly into non-standard environments\n\t// @see https://github.com/webpack-contrib/style-loader/issues/177\n\treturn window && document && document.all && !window.atob;\n});\n\nvar getTarget = function (target, parent) {\n  if (parent){\n    return parent.querySelector(target);\n  }\n  return document.querySelector(target);\n};\n\nvar getElement = (function (fn) {\n\tvar memo = {};\n\n\treturn function(target, parent) {\n                // If passing function in options, then use it for resolve \"head\" element.\n                // Useful for Shadow Root style i.e\n                // {\n                //   insertInto: function () { return document.querySelector(\"#foo\").shadowRoot }\n                // }\n                if (typeof target === 'function') {\n                        return target();\n                }\n                if (typeof memo[target] === \"undefined\") {\n\t\t\tvar styleTarget = getTarget.call(this, target, parent);\n\t\t\t// Special case to return head of iframe instead of iframe itself\n\t\t\tif (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n\t\t\t\ttry {\n\t\t\t\t\t// This will throw an exception if access to iframe is blocked\n\t\t\t\t\t// due to cross-origin restrictions\n\t\t\t\t\tstyleTarget = styleTarget.contentDocument.head;\n\t\t\t\t} catch(e) {\n\t\t\t\t\tstyleTarget = null;\n\t\t\t\t}\n\t\t\t}\n\t\t\tmemo[target] = styleTarget;\n\t\t}\n\t\treturn memo[target]\n\t};\n})();\n\nvar singleton = null;\nvar\tsingletonCounter = 0;\nvar\tstylesInsertedAtTop = [];\n\nvar\tfixUrls = __webpack_require__(/*! ./urls */ \"./node_modules/style-loader/lib/urls.js\");\n\nmodule.exports = function(list, options) {\n\tif (typeof DEBUG !== \"undefined\" && DEBUG) {\n\t\tif (typeof document !== \"object\") throw new Error(\"The style-loader cannot be used in a non-browser environment\");\n\t}\n\n\toptions = options || {};\n\n\toptions.attrs = typeof options.attrs === \"object\" ? options.attrs : {};\n\n\t// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>\n\t// tags it will allow on a page\n\tif (!options.singleton && typeof options.singleton !== \"boolean\") options.singleton = isOldIE();\n\n\t// By default, add <style> tags to the <head> element\n        if (!options.insertInto) options.insertInto = \"head\";\n\n\t// By default, add <style> tags to the bottom of the target\n\tif (!options.insertAt) options.insertAt = \"bottom\";\n\n\tvar styles = listToStyles(list, options);\n\n\taddStylesToDom(styles, options);\n\n\treturn function update (newList) {\n\t\tvar mayRemove = [];\n\n\t\tfor (var i = 0; i < styles.length; i++) {\n\t\t\tvar item = styles[i];\n\t\t\tvar domStyle = stylesInDom[item.id];\n\n\t\t\tdomStyle.refs--;\n\t\t\tmayRemove.push(domStyle);\n\t\t}\n\n\t\tif(newList) {\n\t\t\tvar newStyles = listToStyles(newList, options);\n\t\t\taddStylesToDom(newStyles, options);\n\t\t}\n\n\t\tfor (var i = 0; i < mayRemove.length; i++) {\n\t\t\tvar domStyle = mayRemove[i];\n\n\t\t\tif(domStyle.refs === 0) {\n\t\t\t\tfor (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();\n\n\t\t\t\tdelete stylesInDom[domStyle.id];\n\t\t\t}\n\t\t}\n\t};\n};\n\nfunction addStylesToDom (styles, options) {\n\tfor (var i = 0; i < styles.length; i++) {\n\t\tvar item = styles[i];\n\t\tvar domStyle = stylesInDom[item.id];\n\n\t\tif(domStyle) {\n\t\t\tdomStyle.refs++;\n\n\t\t\tfor(var j = 0; j < domStyle.parts.length; j++) {\n\t\t\t\tdomStyle.parts[j](item.parts[j]);\n\t\t\t}\n\n\t\t\tfor(; j < item.parts.length; j++) {\n\t\t\t\tdomStyle.parts.push(addStyle(item.parts[j], options));\n\t\t\t}\n\t\t} else {\n\t\t\tvar parts = [];\n\n\t\t\tfor(var j = 0; j < item.parts.length; j++) {\n\t\t\t\tparts.push(addStyle(item.parts[j], options));\n\t\t\t}\n\n\t\t\tstylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};\n\t\t}\n\t}\n}\n\nfunction listToStyles (list, options) {\n\tvar styles = [];\n\tvar newStyles = {};\n\n\tfor (var i = 0; i < list.length; i++) {\n\t\tvar item = list[i];\n\t\tvar id = options.base ? item[0] + options.base : item[0];\n\t\tvar css = item[1];\n\t\tvar media = item[2];\n\t\tvar sourceMap = item[3];\n\t\tvar part = {css: css, media: media, sourceMap: sourceMap};\n\n\t\tif(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});\n\t\telse newStyles[id].parts.push(part);\n\t}\n\n\treturn styles;\n}\n\nfunction insertStyleElement (options, style) {\n\tvar target = getElement(options.insertInto)\n\n\tif (!target) {\n\t\tthrow new Error(\"Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.\");\n\t}\n\n\tvar lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];\n\n\tif (options.insertAt === \"top\") {\n\t\tif (!lastStyleElementInsertedAtTop) {\n\t\t\ttarget.insertBefore(style, target.firstChild);\n\t\t} else if (lastStyleElementInsertedAtTop.nextSibling) {\n\t\t\ttarget.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);\n\t\t} else {\n\t\t\ttarget.appendChild(style);\n\t\t}\n\t\tstylesInsertedAtTop.push(style);\n\t} else if (options.insertAt === \"bottom\") {\n\t\ttarget.appendChild(style);\n\t} else if (typeof options.insertAt === \"object\" && options.insertAt.before) {\n\t\tvar nextSibling = getElement(options.insertAt.before, target);\n\t\ttarget.insertBefore(style, nextSibling);\n\t} else {\n\t\tthrow new Error(\"[Style Loader]\\n\\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\\n Must be 'top', 'bottom', or Object.\\n (https://github.com/webpack-contrib/style-loader#insertat)\\n\");\n\t}\n}\n\nfunction removeStyleElement (style) {\n\tif (style.parentNode === null) return false;\n\tstyle.parentNode.removeChild(style);\n\n\tvar idx = stylesInsertedAtTop.indexOf(style);\n\tif(idx >= 0) {\n\t\tstylesInsertedAtTop.splice(idx, 1);\n\t}\n}\n\nfunction createStyleElement (options) {\n\tvar style = document.createElement(\"style\");\n\n\tif(options.attrs.type === undefined) {\n\t\toptions.attrs.type = \"text/css\";\n\t}\n\n\tif(options.attrs.nonce === undefined) {\n\t\tvar nonce = getNonce();\n\t\tif (nonce) {\n\t\t\toptions.attrs.nonce = nonce;\n\t\t}\n\t}\n\n\taddAttrs(style, options.attrs);\n\tinsertStyleElement(options, style);\n\n\treturn style;\n}\n\nfunction createLinkElement (options) {\n\tvar link = document.createElement(\"link\");\n\n\tif(options.attrs.type === undefined) {\n\t\toptions.attrs.type = \"text/css\";\n\t}\n\toptions.attrs.rel = \"stylesheet\";\n\n\taddAttrs(link, options.attrs);\n\tinsertStyleElement(options, link);\n\n\treturn link;\n}\n\nfunction addAttrs (el, attrs) {\n\tObject.keys(attrs).forEach(function (key) {\n\t\tel.setAttribute(key, attrs[key]);\n\t});\n}\n\nfunction getNonce() {\n\tif (false) {}\n\n\treturn __webpack_require__.nc;\n}\n\nfunction addStyle (obj, options) {\n\tvar style, update, remove, result;\n\n\t// If a transform function was defined, run it on the css\n\tif (options.transform && obj.css) {\n\t    result = typeof options.transform === 'function'\n\t\t ? options.transform(obj.css) \n\t\t : options.transform.default(obj.css);\n\n\t    if (result) {\n\t    \t// If transform returns a value, use that instead of the original css.\n\t    \t// This allows running runtime transformations on the css.\n\t    \tobj.css = result;\n\t    } else {\n\t    \t// If the transform function returns a falsy value, don't add this css.\n\t    \t// This allows conditional loading of css\n\t    \treturn function() {\n\t    \t\t// noop\n\t    \t};\n\t    }\n\t}\n\n\tif (options.singleton) {\n\t\tvar styleIndex = singletonCounter++;\n\n\t\tstyle = singleton || (singleton = createStyleElement(options));\n\n\t\tupdate = applyToSingletonTag.bind(null, style, styleIndex, false);\n\t\tremove = applyToSingletonTag.bind(null, style, styleIndex, true);\n\n\t} else if (\n\t\tobj.sourceMap &&\n\t\ttypeof URL === \"function\" &&\n\t\ttypeof URL.createObjectURL === \"function\" &&\n\t\ttypeof URL.revokeObjectURL === \"function\" &&\n\t\ttypeof Blob === \"function\" &&\n\t\ttypeof btoa === \"function\"\n\t) {\n\t\tstyle = createLinkElement(options);\n\t\tupdate = updateLink.bind(null, style, options);\n\t\tremove = function () {\n\t\t\tremoveStyleElement(style);\n\n\t\t\tif(style.href) URL.revokeObjectURL(style.href);\n\t\t};\n\t} else {\n\t\tstyle = createStyleElement(options);\n\t\tupdate = applyToTag.bind(null, style);\n\t\tremove = function () {\n\t\t\tremoveStyleElement(style);\n\t\t};\n\t}\n\n\tupdate(obj);\n\n\treturn function updateStyle (newObj) {\n\t\tif (newObj) {\n\t\t\tif (\n\t\t\t\tnewObj.css === obj.css &&\n\t\t\t\tnewObj.media === obj.media &&\n\t\t\t\tnewObj.sourceMap === obj.sourceMap\n\t\t\t) {\n\t\t\t\treturn;\n\t\t\t}\n\n\t\t\tupdate(obj = newObj);\n\t\t} else {\n\t\t\tremove();\n\t\t}\n\t};\n}\n\nvar replaceText = (function () {\n\tvar textStore = [];\n\n\treturn function (index, replacement) {\n\t\ttextStore[index] = replacement;\n\n\t\treturn textStore.filter(Boolean).join('\\n');\n\t};\n})();\n\nfunction applyToSingletonTag (style, index, remove, obj) {\n\tvar css = remove ? \"\" : obj.css;\n\n\tif (style.styleSheet) {\n\t\tstyle.styleSheet.cssText = replaceText(index, css);\n\t} else {\n\t\tvar cssNode = document.createTextNode(css);\n\t\tvar childNodes = style.childNodes;\n\n\t\tif (childNodes[index]) style.removeChild(childNodes[index]);\n\n\t\tif (childNodes.length) {\n\t\t\tstyle.insertBefore(cssNode, childNodes[index]);\n\t\t} else {\n\t\t\tstyle.appendChild(cssNode);\n\t\t}\n\t}\n}\n\nfunction applyToTag (style, obj) {\n\tvar css = obj.css;\n\tvar media = obj.media;\n\n\tif(media) {\n\t\tstyle.setAttribute(\"media\", media)\n\t}\n\n\tif(style.styleSheet) {\n\t\tstyle.styleSheet.cssText = css;\n\t} else {\n\t\twhile(style.firstChild) {\n\t\t\tstyle.removeChild(style.firstChild);\n\t\t}\n\n\t\tstyle.appendChild(document.createTextNode(css));\n\t}\n}\n\nfunction updateLink (link, options, obj) {\n\tvar css = obj.css;\n\tvar sourceMap = obj.sourceMap;\n\n\t/*\n\t\tIf convertToAbsoluteUrls isn't defined, but sourcemaps are enabled\n\t\tand there is no publicPath defined then lets turn convertToAbsoluteUrls\n\t\ton by default.  Otherwise default to the convertToAbsoluteUrls option\n\t\tdirectly\n\t*/\n\tvar autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;\n\n\tif (options.convertToAbsoluteUrls || autoFixUrls) {\n\t\tcss = fixUrls(css);\n\t}\n\n\tif (sourceMap) {\n\t\t// http://stackoverflow.com/a/26603875\n\t\tcss += \"\\n/*# sourceMappingURL=data:application/json;base64,\" + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + \" */\";\n\t}\n\n\tvar blob = new Blob([css], { type: \"text/css\" });\n\n\tvar oldSrc = link.href;\n\n\tlink.href = URL.createObjectURL(blob);\n\n\tif(oldSrc) URL.revokeObjectURL(oldSrc);\n}\n\n\n//# sourceURL=webpack:///./node_modules/style-loader/lib/addStyles.js?");
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target, parent) {
+  if (parent){
+    return parent.querySelector(target);
+  }
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target, parent) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target, parent);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertAt.before, target);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+
+	if(options.attrs.nonce === undefined) {
+		var nonce = getNonce();
+		if (nonce) {
+			options.attrs.nonce = nonce;
+		}
+	}
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function getNonce() {
+	if (false) {}
+
+	return __webpack_require__.nc;
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = typeof options.transform === 'function'
+		 ? options.transform(obj.css) 
+		 : options.transform.default(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
 
 /***/ }),
 
@@ -138,19 +687,107 @@ eval("/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element with a data-uri to\n * embed the css on the page. This breaks all relative urls because now they are relative to a\n * bundle instead of the current page.\n *\n * One solution is to only use full urls, but that may be impossible.\n *\n * Instead, this function \"fixes\" the relative urls to be absolute according to the current page location.\n *\n * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.\n *\n */\n\nmodule.exports = function (css) {\n  // get current location\n  var location = typeof window !== \"undefined\" && window.location;\n\n  if (!location) {\n    throw new Error(\"fixUrls requires window.location\");\n  }\n\n\t// blank or null?\n\tif (!css || typeof css !== \"string\") {\n\t  return css;\n  }\n\n  var baseUrl = location.protocol + \"//\" + location.host;\n  var currentDir = baseUrl + location.pathname.replace(/\\/[^\\/]*$/, \"/\");\n\n\t// convert each url(...)\n\t/*\n\tThis regular expression is just a way to recursively match brackets within\n\ta string.\n\n\t /url\\s*\\(  = Match on the word \"url\" with any whitespace after it and then a parens\n\t   (  = Start a capturing group\n\t     (?:  = Start a non-capturing group\n\t         [^)(]  = Match anything that isn't a parentheses\n\t         |  = OR\n\t         \\(  = Match a start parentheses\n\t             (?:  = Start another non-capturing groups\n\t                 [^)(]+  = Match anything that isn't a parentheses\n\t                 |  = OR\n\t                 \\(  = Match a start parentheses\n\t                     [^)(]*  = Match anything that isn't a parentheses\n\t                 \\)  = Match a end parentheses\n\t             )  = End Group\n              *\\) = Match anything and then a close parens\n          )  = Close non-capturing group\n          *  = Match anything\n       )  = Close capturing group\n\t \\)  = Match a close parens\n\n\t /gi  = Get all matches, not the first.  Be case insensitive.\n\t */\n\tvar fixedCss = css.replace(/url\\s*\\(((?:[^)(]|\\((?:[^)(]+|\\([^)(]*\\))*\\))*)\\)/gi, function(fullMatch, origUrl) {\n\t\t// strip quotes (if they exist)\n\t\tvar unquotedOrigUrl = origUrl\n\t\t\t.trim()\n\t\t\t.replace(/^\"(.*)\"$/, function(o, $1){ return $1; })\n\t\t\t.replace(/^'(.*)'$/, function(o, $1){ return $1; });\n\n\t\t// already a full url? no change\n\t\tif (/^(#|data:|http:\\/\\/|https:\\/\\/|file:\\/\\/\\/|\\s*$)/i.test(unquotedOrigUrl)) {\n\t\t  return fullMatch;\n\t\t}\n\n\t\t// convert the url to a full url\n\t\tvar newUrl;\n\n\t\tif (unquotedOrigUrl.indexOf(\"//\") === 0) {\n\t\t  \t//TODO: should we add protocol?\n\t\t\tnewUrl = unquotedOrigUrl;\n\t\t} else if (unquotedOrigUrl.indexOf(\"/\") === 0) {\n\t\t\t// path should be relative to the base url\n\t\t\tnewUrl = baseUrl + unquotedOrigUrl; // already starts with '/'\n\t\t} else {\n\t\t\t// path should be relative to current directory\n\t\t\tnewUrl = currentDir + unquotedOrigUrl.replace(/^\\.\\//, \"\"); // Strip leading './'\n\t\t}\n\n\t\t// send back the fixed url(...)\n\t\treturn \"url(\" + JSON.stringify(newUrl) + \")\";\n\t});\n\n\t// send back the fixed css\n\treturn fixedCss;\n};\n\n\n//# sourceURL=webpack:///./node_modules/style-loader/lib/urls.js?");
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
 
 /***/ }),
 
-/***/ "./src/js/entry.js":
-/*!*************************!*\
-  !*** ./src/js/entry.js ***!
-  \*************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/Icons/Arrow_Right/M_Copy@1x.svg":
+/*!*********************************************!*\
+  !*** ./src/Icons/Arrow_Right/M_Copy@1x.svg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _reset_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../reset/reset.css */ \"./src/reset/reset.css\");\n/* harmony import */ var _reset_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reset_reset_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_index_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/index.sass */ \"./src/sass/index.sass\");\n/* harmony import */ var _sass_index_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_index_sass__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.js */ \"./src/js/index.js\");\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _helpers_navbar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./helpers/navbar.js */ \"./src/js/helpers/navbar.js\");\n/* harmony import */ var _helpers_navbar_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_helpers_navbar_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _helpers_filters_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./helpers/filters.js */ \"./src/js/helpers/filters.js\");\n/* harmony import */ var _helpers_filters_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_helpers_filters_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _helpers_arrowsDevices_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helpers/arrowsDevices.js */ \"./src/js/helpers/arrowsDevices.js\");\n/* harmony import */ var _helpers_arrowsDevices_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_helpers_arrowsDevices_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _helpers_arrowsScripts_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./helpers/arrowsScripts.js */ \"./src/js/helpers/arrowsScripts.js\");\n/* harmony import */ var _helpers_arrowsScripts_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_helpers_arrowsScripts_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _helpers_popups_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./helpers/popups.js */ \"./src/js/helpers/popups.js\");\n/* harmony import */ var _helpers_popups_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_helpers_popups_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _helpers_filtersInPopup__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./helpers/filtersInPopup */ \"./src/js/helpers/filtersInPopup.js\");\n/* harmony import */ var _helpers_filtersInPopup__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_helpers_filtersInPopup__WEBPACK_IMPORTED_MODULE_8__);\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+module.exports = __webpack_require__.p + "src/Icons/Arrow_Right/M_Copy@1x.svg";
 
 /***/ }),
 
@@ -161,7 +798,57 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _res
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var arrowPrev = document.querySelector('.devices__devices-btns_previous'),\n      arrowNext = document.querySelector('.devices__devices-btns_next'),\n      devices = document.querySelectorAll('.devices-list__li'),\n      device = document.querySelector('.devices-list__li');\n  device.style.marginLeft = window.getComputedStyle(device).getPropertyValue('margin-left');\n  var count = 6; // изменить на динамически\n\n  var width = 215;\n  arrowPrev.classList.add(\"devices__devices-btns_disabled\");\n\n  if (devices.length - document.querySelectorAll(\".devices__devices-btns_disabled\").length < 6) {\n    arrowPrev.classList.add(\"devices__devices-btns_disabled\");\n    arrowNext.classList.add(\"devices__devices-btns_disabled\");\n  } else {\n    arrowNext.classList.remove(\"devices__devices-btns_disabled\");\n  } // стрелка влево\n\n\n  arrowPrev.addEventListener('click', function () {\n    var positionDevicesCarousel = parseInt(device.style.marginLeft),\n        hiddenBlocks = document.querySelectorAll(\".devices-list__li_hidden\").length;\n\n    if (devices.length - hiddenBlocks > count) {\n      positionDevicesCarousel = Math.min(positionDevicesCarousel + width * count, 0);\n      arrowNext.classList.remove(\"devices__devices-btns_disabled\");\n\n      if (!positionDevicesCarousel) {\n        this.classList.add(\"devices__devices-btns_disabled\");\n      }\n\n      device.style.marginLeft = positionDevicesCarousel + 'px';\n    }\n  }); //стрелка вправо\n\n  arrowNext.addEventListener(\"click\", function () {\n    var positionDevicesCarousel = parseInt(device.style.marginLeft),\n        hiddenBlocks = document.querySelectorAll(\".devices-list__li_hidden\").length;\n\n    if (devices.length - document.querySelectorAll(\".devices__devices-btns_disabled\").length > count) {\n      positionDevicesCarousel = Math.max(positionDevicesCarousel - width * count, -width * (devices.length - hiddenBlocks - count));\n      arrowPrev.classList.remove(\"devices__devices-btns_disabled\");\n\n      if (positionDevicesCarousel === -width * (devices.length - document.querySelectorAll(\".devices-list__li_hidden\").length - count)) {\n        this.classList.add(\"devices__devices-btns_disabled\");\n      }\n\n      device.style.marginLeft = positionDevicesCarousel + 'px';\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/helpers/arrowsDevices.js?");
+document.addEventListener("DOMContentLoaded", function () {
+  var arrowPrev = document.querySelector('.devices__devices-btns_previous'),
+      arrowNext = document.querySelector('.devices__devices-btns_next'),
+      devices = document.querySelectorAll('.devices-list__li'),
+      device = document.querySelector('.devices-list__li');
+  device.style.marginLeft = window.getComputedStyle(device).getPropertyValue('margin-left');
+  var count = 6; // изменить на динамически
+
+  var width = 215;
+  arrowPrev.classList.add("devices__devices-btns_disabled");
+
+  if (devices.length - document.querySelectorAll(".devices__devices-btns_disabled").length < 6) {
+    arrowPrev.classList.add("devices__devices-btns_disabled");
+    arrowNext.classList.add("devices__devices-btns_disabled");
+  } else {
+    arrowNext.classList.remove("devices__devices-btns_disabled");
+  } // стрелка влево
+
+
+  arrowPrev.addEventListener('click', function () {
+    var positionDevicesCarousel = parseInt(device.style.marginLeft),
+        hiddenBlocks = document.querySelectorAll(".devices-list__li_hidden").length;
+
+    if (devices.length - hiddenBlocks > count) {
+      positionDevicesCarousel = Math.min(positionDevicesCarousel + width * count, 0);
+      arrowNext.classList.remove("devices__devices-btns_disabled");
+
+      if (!positionDevicesCarousel) {
+        this.classList.add("devices__devices-btns_disabled");
+      }
+
+      device.style.marginLeft = positionDevicesCarousel + 'px';
+    }
+  }); //стрелка вправо
+
+  arrowNext.addEventListener("click", function () {
+    var positionDevicesCarousel = parseInt(device.style.marginLeft),
+        hiddenBlocks = document.querySelectorAll(".devices-list__li_hidden").length;
+
+    if (devices.length - document.querySelectorAll(".devices__devices-btns_disabled").length > count) {
+      positionDevicesCarousel = Math.max(positionDevicesCarousel - width * count, -width * (devices.length - hiddenBlocks - count));
+      arrowPrev.classList.remove("devices__devices-btns_disabled");
+
+      if (positionDevicesCarousel === -width * (devices.length - document.querySelectorAll(".devices-list__li_hidden").length - count)) {
+        this.classList.add("devices__devices-btns_disabled");
+      }
+
+      device.style.marginLeft = positionDevicesCarousel + 'px';
+    }
+  });
+});
 
 /***/ }),
 
@@ -172,7 +859,46 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var arrow
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var scriptsContainer = document.querySelector('.scripts__ul'),\n      scripts = document.querySelectorAll('.scripts__li'),\n      btnPrev = document.querySelector('.scripts__scripts-btn-prev'),\n      btnNext = document.querySelector('.scripts__scripts-btn-next');\n  scriptsContainer.style.marginLeft = window.getComputedStyle(scriptsContainer).getPropertyValue('margin-left');\n  btnPrev.classList.add(\"scripts__scripts-btn-prev_disabled\");\n\n  if (scripts.length < 9) {\n    btnPrev.classList.add(\"scripts__scripts-btn-prev_disabled\");\n    btnNext.classList.add(\"scripts__scripts-btn-next_disabled\");\n  } else {\n    btnNext.classList.remove(\"scripts__scripts-btn-next_disabled\");\n  }\n\n  var widthScenariosDiv = 670,\n      positionScriptsCarousel = 0;\n\n  btnPrev.onclick = function () {\n    positionScriptsCarousel = Math.min(positionScriptsCarousel + widthScenariosDiv, 0);\n    btnNext.classList.remove(\"scripts__scripts-btn-next_disabled\");\n\n    if (!positionScriptsCarousel) {\n      this.classList.add(\"scripts__scripts-btn-prev_disabled\");\n    }\n\n    scriptsContainer.style.marginLeft = positionScriptsCarousel + 'px';\n  };\n\n  btnNext.onclick = function () {\n    positionScriptsCarousel = Math.max(positionScriptsCarousel - widthScenariosDiv, -widthScenariosDiv * Math.ceil(scripts.length / 9 - 1));\n    btnPrev.classList.remove(\"scripts__scripts-btn-prev_disabled\");\n\n    if (positionScriptsCarousel === -widthScenariosDiv * Math.ceil(scripts.length / 9 - 1)) {\n      this.classList.add(\"scripts__scripts-btn-next_disabled\");\n    }\n\n    scriptsContainer.style.marginLeft = positionScriptsCarousel + 'px';\n  };\n});\n\n//# sourceURL=webpack:///./src/js/helpers/arrowsScripts.js?");
+document.addEventListener("DOMContentLoaded", function () {
+  var scriptsContainer = document.querySelector('.scripts__ul'),
+      scripts = document.querySelectorAll('.scripts__li'),
+      btnPrev = document.querySelector('.scripts__scripts-btn-prev'),
+      btnNext = document.querySelector('.scripts__scripts-btn-next');
+  scriptsContainer.style.marginLeft = window.getComputedStyle(scriptsContainer).getPropertyValue('margin-left');
+  btnPrev.classList.add("scripts__scripts-btn-prev_disabled");
+
+  if (scripts.length < 9) {
+    btnPrev.classList.add("scripts__scripts-btn-prev_disabled");
+    btnNext.classList.add("scripts__scripts-btn-next_disabled");
+  } else {
+    btnNext.classList.remove("scripts__scripts-btn-next_disabled");
+  }
+
+  var widthScenariosDiv = 670,
+      positionScriptsCarousel = 0;
+
+  btnPrev.onclick = function () {
+    positionScriptsCarousel = Math.min(positionScriptsCarousel + widthScenariosDiv, 0);
+    btnNext.classList.remove("scripts__scripts-btn-next_disabled");
+
+    if (!positionScriptsCarousel) {
+      this.classList.add("scripts__scripts-btn-prev_disabled");
+    }
+
+    scriptsContainer.style.marginLeft = positionScriptsCarousel + 'px';
+  };
+
+  btnNext.onclick = function () {
+    positionScriptsCarousel = Math.max(positionScriptsCarousel - widthScenariosDiv, -widthScenariosDiv * Math.ceil(scripts.length / 9 - 1));
+    btnPrev.classList.remove("scripts__scripts-btn-prev_disabled");
+
+    if (positionScriptsCarousel === -widthScenariosDiv * Math.ceil(scripts.length / 9 - 1)) {
+      this.classList.add("scripts__scripts-btn-next_disabled");
+    }
+
+    scriptsContainer.style.marginLeft = positionScriptsCarousel + 'px';
+  };
+});
 
 /***/ }),
 
@@ -183,7 +909,46 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var scrip
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var filters = document.querySelector('.devices__filters-ul'),\n      firstDevice = document.querySelector('.devices-list__li'),\n      devices = document.querySelectorAll('.devices-list__li'),\n      arrowPrev = document.querySelector('.devices__devices-btns_previous'),\n      arrowNext = document.querySelector('.devices__devices-btns_next');\n  filters.addEventListener('click', function (filter) {\n    if (filter.target.nodeName === 'LI') {\n      firstDevice.style.marginLeft = '0';\n      var active = filters.querySelector('.devices__filter-li_active');\n\n      if (active) {\n        active.classList.remove('devices__filter-li_active');\n      }\n\n      filter.target.classList.add(\"devices__filter-li_active\");\n\n      for (var i = 0; i < devices.length; i++) {\n        devices[i].classList.remove('devices-list__li_hidden');\n      }\n\n      if (filter.target.id !== \"all\") {\n        for (var _i = 0; _i < devices.length; _i++) {\n          if (!devices[_i].classList.contains('devices-list__li_' + filter.target.id)) {\n            devices[_i].classList.add('devices-list__li_hidden');\n          }\n        }\n      }\n\n      arrowPrev.classList.add(\"devices__devices-btns_disabled\");\n\n      if (devices.length - document.querySelectorAll(\".devices-list__li_hidden\").length < 6) {\n        arrowPrev.classList.add(\"devices__devices-btns_disabled\");\n        arrowNext.classList.add(\"devices__devices-btns_disabled\");\n      } else {\n        arrowNext.classList.remove(\"devices__devices-btns_disabled\");\n      }\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/helpers/filters.js?");
+document.addEventListener("DOMContentLoaded", function () {
+  var filters = document.querySelector('.devices__filters-ul'),
+      firstDevice = document.querySelector('.devices-list__li'),
+      devices = document.querySelectorAll('.devices-list__li'),
+      arrowPrev = document.querySelector('.devices__devices-btns_previous'),
+      arrowNext = document.querySelector('.devices__devices-btns_next');
+  filters.addEventListener('click', function (filter) {
+    if (filter.target.nodeName === 'LI') {
+      firstDevice.style.marginLeft = '0';
+      var active = filters.querySelector('.devices__filter-li_active');
+
+      if (active) {
+        active.classList.remove('devices__filter-li_active');
+      }
+
+      filter.target.classList.add("devices__filter-li_active");
+
+      for (var i = 0; i < devices.length; i++) {
+        devices[i].classList.remove('devices-list__li_hidden');
+      }
+
+      if (filter.target.id !== "all") {
+        for (var _i = 0; _i < devices.length; _i++) {
+          if (!devices[_i].classList.contains('devices-list__li_' + filter.target.id)) {
+            devices[_i].classList.add('devices-list__li_hidden');
+          }
+        }
+      }
+
+      arrowPrev.classList.add("devices__devices-btns_disabled");
+
+      if (devices.length - document.querySelectorAll(".devices-list__li_hidden").length < 6) {
+        arrowPrev.classList.add("devices__devices-btns_disabled");
+        arrowNext.classList.add("devices__devices-btns_disabled");
+      } else {
+        arrowNext.classList.remove("devices__devices-btns_disabled");
+      }
+    }
+  });
+});
 
 /***/ }),
 
@@ -191,10 +956,82 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var filte
 /*!******************************************!*\
   !*** ./src/js/helpers/filtersInPopup.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var filters = document.querySelectorAll('.slider-filters-item'),\n      sliderTemperature = document.querySelector('.modal-block-slider-temperature__input'),\n      sliderLight = document.querySelector('.modal-block-slider-light__input');\n  var filterValues = {\n    \"manually\": \"10\",\n    \"cold\": \"-2\",\n    \"warm\": \"23\",\n    \"hot\": \"28\",\n    \"manually-light\": \"50\",\n    \"day\": \"16\",\n    \"evening\": \"87\",\n    \"sunrise\": \"45\"\n  };\n  sliderTemperature.addEventListener('input', function () {\n    console.log(this);\n    console.log('hi');\n\n    for (var i = 0; i < filters.length; i++) {\n      if (filters[i].classList.contains('modal-block-slider-temperature__li_manually')) {\n        filters[i].classList.add('modal-block__li_active');\n      } else {\n        filters[i].classList.remove('modal-block__li_active');\n      }\n    } //label.innerHTML = (this.value > 0) ? \"+\" + this.value : this.value;\n\n  });\n  sliderLight.addEventListener('input', function () {\n    for (var i = 0; i < filters.length; i++) {\n      if (filters[i].classList.contains('modal-block-slider-light__li_manually')) {\n        filters[i].classList.add('modal-block__li_active');\n      } else {\n        filters[i].classList.remove('modal-block__li_active');\n      }\n    }\n  }); //тут реализуем изменение состояний у фильтров слайдера ( удалить активный, добавить активный, найти по классу какой именно)\n  // нет смысла проверять range-floor\n  //     if (slider.classList.contains(\"range-temperature\") ||\n  //         slider.classList.contains(\"range-light\")) {\n  //         filtersSlider.forEach(function (filterItem) {\n  //             filterItem.onclick = function () {\n  //                 filtersSlider.forEach(function (filterItem) {\n  //                     filterItem.classList.remove('active');\n  //                 });\n  //                 filterItem.classList.add(\"active\");\n  //                 //ищем из ключей объекта, который объявил выше тот, который является классом этого фильтра\n  //                 Object.keys(filtersObject).forEach(function (entry) {\n  //                     if (filterItem.classList.contains(entry)) {\n  //                         slider.value = filtersObject[entry];\n  //                         if (slider.classList.contains(\"range-temperature\")) {\n  //                             outputText.innerHTML = (slider.value <= 0) ?\n  //                                 slider.value : \"+\" + slider.value;\n  //                         }\n  //                     }\n  //                 });\n  //             }\n  //         })\n  //     }\n});\n\n//# sourceURL=webpack:///./src/js/helpers/filtersInPopup.js?");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return filtersInPopup; });
+function filtersInPopup(doc) {
+  var filters = doc.querySelector('.modal-block__ul'),
+      sliderTemperature = doc.querySelector('.modal-block-slider-temperature__input'),
+      sliderLight = doc.querySelector('.modal-block-slider-light__input'),
+      label = doc.querySelector('.modal-block__output_temp'),
+      filtersArray = doc.querySelectorAll('.modal-block__li');
+  var filterValues = {
+    "manually": "10",
+    "cold": "-2",
+    "warm": "23",
+    "hot": "28",
+    "manually-light": "50",
+    "day": "16",
+    "evening": "87",
+    "sunrise": "45"
+  };
+
+  if (sliderTemperature) {
+    sliderTemperature.addEventListener('input', function (e) {
+      for (var i = 0; i < filtersArray.length; i++) {
+        if (filtersArray[i].classList.contains('modal-block-slider-temperature__li_manually')) {
+          filtersArray[i].classList.add('modal-block__li_active');
+        } else {
+          filtersArray[i].classList.remove('modal-block__li_active');
+        }
+      }
+
+      label.innerHTML = this.value > 0 ? "+" + this.value : this.value;
+    });
+  } else {
+    if (sliderLight) {
+      sliderLight.addEventListener('input', function (e) {
+        for (var i = 0; i < filtersArray.length; i++) {
+          if (filtersArray[i].classList.contains('modal-block-slider-light__li_manually')) {
+            filtersArray[i].classList.add('modal-block__li_active');
+          } else {
+            filtersArray[i].classList.remove('modal-block__li_active');
+          }
+        }
+      });
+    }
+  }
+
+  filters.addEventListener('click', function (e) {
+    var classList = e.target.classList;
+
+    if (classList.contains('modal-block__li')) {
+      for (var i = 0; i < filtersArray.length; i++) {
+        filtersArray[i].classList.remove('modal-block__li_active');
+      }
+
+      e.target.classList.add('modal-block__li_active');
+      var className = 'modal-block-slider-temperature__li_';
+
+      for (var _i = 0; _i < Object.keys(filterValues).length; _i++) {
+        if (e.target.classList.contains(className + Object.keys(filterValues)[_i])) {
+          var value = filterValues[Object.keys(filterValues)[_i]];
+
+          sliderTemperature.value = value;
+
+          if (value > 0) {
+            label.innerHTML = "+" + value;
+          } else {
+            label.innerHTML = value;
+          }
+        }
+      }
+    }
+  });
+}
 
 /***/ }),
 
@@ -205,7 +1042,103 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var filte
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var navBar = document.querySelector('.header__ul'),\n      links = document.querySelectorAll('.header__a');\n  navBar.addEventListener('click', function (event) {\n    if (event.target.nodeName === 'A') {\n      for (var i = 0; i < links.length; i++) {\n        links[i].classList.remove('header__a_active');\n      }\n\n      event.target.classList.add('header__a_active');\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/js/helpers/navbar.js?");
+document.addEventListener("DOMContentLoaded", function () {
+  var navBar = document.querySelector('.header__ul'),
+      links = document.querySelectorAll('.header__a');
+  navBar.addEventListener('click', function (event) {
+    if (event.target.nodeName === 'A') {
+      for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove('header__a_active');
+      }
+
+      event.target.classList.add('header__a_active');
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/helpers/others.js":
+/*!**********************************!*\
+  !*** ./src/js/helpers/others.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.addEventListener("DOMContentLoaded", function () {
+  //скролл главного окна, тут просто плавно убираем иконку, если скролл начался
+  document.querySelector('.main-block__block-list').onscroll = function () {
+    //document.getElementById("with-icon").querySelector("img").style.opacity = "1";
+    document.getElementById("withIcon").classList.add('main-block__li_active');
+  }; // не закончено
+  // //бургерное меню для мобилок
+  // document.getElementById('burger-menu').onclick = function () {
+  //     document.getElementById('nav-links').classList.toggle('active-menu');
+  //     document.querySelector('.fixed-bg').classList.toggle('active');
+  // };
+  //
+  // //меню фильтров для мобилок
+  // document.getElementById('filters-ul').onclick = function () {
+  //     this.classList.toggle('active');
+  // };
+  // //для мобилок разделим wrapper и header, так как header в мобилках fixed
+  // document.querySelector('header').classList.add('blur');
+  // //отдельно блюрим футер, так как он у нас fixed
+  // document.querySelector('footer').classList.add('blur');
+  // document.querySelector('body').style.overflow = "hidden";
+  // modalBlock.setAttribute('style', "transform: translate(" + translateX + "px, " + translateY + "px)");
+  //
+  // };
+
+});
+
+/***/ }),
+
+/***/ "./src/js/helpers/popupCircle.js":
+/*!***************************************!*\
+  !*** ./src/js/helpers/popupCircle.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return circlePopup; });
+function circlePopup(context) {
+  var slider = context.querySelector(".modal-block-slider-floor-temp__input");
+
+  if (slider) {
+    var orangePartSlider = context.querySelector('.modal-block-slider-floor-temp__path_orange');
+    var blackPartSlider = context.querySelector('.modal-block-slider-floor-temp__path_black');
+    var dashArray = context.querySelector('.modal-block-slider-floor-temp__path_dasharray');
+    var degree = 270 / (slider['max'] - slider['min']);
+    orangePartSlider.setAttribute('d', describeArc(110, 110, 98, 225, 225 + (slider['value'] - slider['min']) * degree));
+    blackPartSlider.setAttribute('d', describeArc(110, 110, 98, 225 + (slider['value'] - slider['min']) * degree, 495));
+    dashArray.setAttribute('d', describeArc(110, 110, 98, 225, 495));
+    slider.addEventListener('input', function () {
+      var output = context.querySelector('.modal-block-slider-floor-temp__output');
+      output.innerHTML = "+" + this.value;
+      var degree = 270 / (this['max'] - this['min']);
+      var iteration = this['value'] - this['min'];
+      orangePartSlider.setAttribute("d", describeArc(110, 110, 98, 225, 225 + iteration * degree));
+    });
+  }
+}
+
+function describeArc(x, y, radius, startAngle, endAngle) {
+  var start = polarToCartesian(x, y, radius, endAngle);
+  var end = polarToCartesian(x, y, radius, startAngle);
+  var largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+  return ["M", start.x, start.y, "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y].join(" ");
+}
+
+function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+  var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+  return {
+    x: centerX + radius * Math.cos(angleInRadians),
+    y: centerY + radius * Math.sin(angleInRadians)
+  };
+}
 
 /***/ }),
 
@@ -213,10 +1146,75 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var navBa
 /*!**********************************!*\
   !*** ./src/js/helpers/popups.js ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var btnClose = document.querySelector(\".modal-block__modal-btns_close\"),\n      btnApply = document.querySelector(\".modal-block__modal-btns_apply\"),\n      devicesList = document.querySelector(\".devices-list\"),\n      modalBlock = document.querySelector('.modal-block'),\n      modalBlockContent = document.querySelector('.modal-block__modal-info'),\n      wrapper = document.querySelector('.wrapper'),\n      bg = document.querySelector('.fixed-bg'),\n      sliderForm = document.querySelector('.modal-block__form'),\n      sliderInputTemp = document.querySelector('.modal-block-slider-temperature__input'),\n      labelTemp = document.querySelector('.modal-block__output_temp'); // Формируем модальное окно путем innerHTML\n\n  devicesList.addEventListener('click', function (event) {\n    if (event.target && event.target.nodeName === \"LI\") {\n      bg.classList.add('fixed-bg_active'); //document.querySelector('header').style.zIndex = '999';\n\n      wrapper.classList.add('wrapper_blur');\n      modalBlock.style.top = event.y + \"px\";\n      modalBlock.style.left = event.x + \"px\";\n      modalBlockContent.innerHTML = event.target.innerHTML;\n      setTimeout(function () {\n        modalBlock.style.display = \"block\";\n        setTimeout(function () {\n          modalBlock.classList.add('modal-block_active');\n        }, 10);\n      }, 10); //\n      // // это если слайдер крутилка\n      // const circleSliderInModal = modalBlock.querySelector(\".input-range-div\");\n      // const circleSlider = document.getElementById(\"div-floor-slider\");\n      //\n      //\n      // //Слайдер именно модального окна\n      // const slider = modalBlock.querySelector(\".input-range\");\n      // const outputText = modalBlock.querySelector(\".output-range > b\");\n      // const outputMin = modalBlock.querySelector(\".output-min > p\");\n      // const outputMax = modalBlock.querySelector(\".output-max > p\");\n      //\n      // // Если слайдер температуры берем мин, макс, и сохраненное\n      //\n      // if (slider.classList.contains(\"range-temperature\")) {\n      //     outputMin.innerHTML = slider.min;\n      //     outputMax.innerHTML = \"+\" + slider.max;\n      //     outputText.innerHTML = (slider.defaultValue > 0) ?\n      //         \"+\" + slider.defaultValue : slider.defaultValue;\n      // } else if (slider.classList.contains(\"input-range-floor\")) {\n      //     outputText.innerHTML = (slider.defaultValue > 0) ?\n      //         \"+\" + slider.defaultValue : slider.defaultValue;\n      // }\n      // // тут будем навешивать класс на крутилку, потом препроцессором будем крутить стрелочку\n      // if (slider.classList.contains('input-range-floor')) {\n      //\n      //     modalBlock.classList.add('range-floor');\n      //     const orangePartSliderInModal = modalBlock.querySelector('.arc-orange-floor');\n      //     const blackPartSliderInModal = modalBlock.querySelector('.arc-black-floor');\n      //     const dashArray = modalBlock.querySelector('.dasharray');\n      //\n      //     const degree = 270 / (slider['max'] - slider['min']);\n      //     orangePartSliderInModal.setAttribute('d', describeArc(110, 110, 98, 225, 225 + (slider['value'] - slider['min']) * degree));\n      //     blackPartSliderInModal.setAttribute('d', describeArc(110, 110, 98, 225 + (slider['value'] - slider['min']) * degree, 495));\n      //     dashArray.setAttribute('d', describeArc(110, 110, 98, 225, 495));\n      //\n      //     slider.oninput = function () {\n      //         circleSliderInModal.setAttribute('class', 'input-range-div value' + this.value);\n      //         outputText.innerHTML = \"+\" + this.value;\n      //         const degree = 270 / (this['max'] - this['min']);\n      //         const iteration = this['value'] - this['min'];\n      //         orangePartSliderInModal.setAttribute(\"d\", describeArc(110, 110, 98, 225, 225 + iteration * degree));\n      //     };\n      // }\n      //\n      //\n      // //для мобилок разделим wrapper и header, так как header в мобилках fixed\n      // document.querySelector('header').classList.add('blur');\n      // //отдельно блюрим футер, так как он у нас fixed\n      // document.querySelector('footer').classList.add('blur');\n      // document.querySelector('body').style.overflow = \"hidden\";\n      // modalBlock.setAttribute('style', \"transform: translate(\" + translateX + \"px, \" + translateY + \"px)\");\n      //\n      // // кнопка \"Отменить\" возвращаем все на места\n      //\n      //\n      // btnApply.onclick = function () {\n      //     device.querySelector('.input-range').defaultValue = slider.value;\n      //     // если есть блок с крутилкой, навешиваем класс, если нет, то сохраняем фильтры из модального окна к блоку устройств\n      //     if (circleSliderInModal) {\n      //         circleSlider.setAttribute('class', circleSliderInModal.getAttribute('class'));\n      //         document.querySelector('.arc-orange-floor').setAttribute(\"d\", modalBlock.querySelector('.arc-orange-floor').getAttribute(\"d\"));\n      //         document.querySelector('.arc-black-floor').setAttribute(\"d\", modalBlock.querySelector('.arc-black-floor').getAttribute(\"d\"));\n      //     } else {\n      //         device.querySelector('.slider-filters-ul').innerHTML = '';\n      //         filtersSlider.forEach(function (filterItem) {\n      //             device.querySelector('.slider-filters-ul').appendChild(filterItem);\n      //         });\n      //     }\n      //     //возвращаем все на места\n      //     document.querySelector('body').style.overflow = \"\";\n      //     modalBlock.style.left = \"\";\n      //     modalBlock.style.top = \"\";\n      //     modalBlock.style.transform = \"\";\n      //     modalBlock.classList.remove('active');\n      //     modalBlock.classList.remove('range-floor');\n      //     document.querySelector('.fixed-bg').classList.remove('active');\n      //\n      //     document.querySelector('header').style.zIndex = \"\";\n      //     document.getElementById('nav-links').style.zIndex = \"\";\n      //     document.querySelector('header').classList.remove('blur');\n      //     document.querySelector('.wrapper').classList.remove('blur');\n      //     document.querySelector('footer').classList.remove('blur');\n      //     document.querySelector('.modal-space').style.visibility = \"\";\n      // };\n    }\n  });\n  btnClose.addEventListener('click', function () {\n    modalBlock.classList.remove('modal-block_active');\n    setTimeout(function () {\n      modalBlock.style.display = \"none\";\n      bg.classList.remove('fixed-bg_active');\n      wrapper.classList.remove('wrapper_blur');\n    }, 500);\n  });\n  sliderForm.addEventListener('input', function () {\n    labelTemp.value = sliderInputTemp.value;\n  });\n});\n\nfunction polarToCartesian(centerX, centerY, radius, angleInDegrees) {\n  var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;\n  return {\n    x: centerX + radius * Math.cos(angleInRadians),\n    y: centerY + radius * Math.sin(angleInRadians)\n  };\n}\n\nfunction describeArc(x, y, radius, startAngle, endAngle) {\n  var start = polarToCartesian(x, y, radius, endAngle);\n  var end = polarToCartesian(x, y, radius, startAngle);\n  var largeArcFlag = endAngle - startAngle <= 180 ? \"0\" : \"1\";\n  var d = [\"M\", start.x, start.y, \"A\", radius, radius, 0, largeArcFlag, 0, end.x, end.y].join(\" \");\n  return d;\n}\n\n//# sourceURL=webpack:///./src/js/helpers/popups.js?");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _filtersInPopup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./filtersInPopup.js */ "./src/js/helpers/filtersInPopup.js");
+/* harmony import */ var _popupCircle_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./popupCircle.js */ "./src/js/helpers/popupCircle.js");
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var btnClose = document.querySelector(".modal-block__modal-btns_close"),
+      btnApply = document.querySelector(".modal-block__modal-btns_apply"),
+      devicesList = document.querySelector(".devices-list"),
+      modalBlock = document.querySelector('.modal-block'),
+      modalBlockContent = document.querySelector('.modal-block__modal-info'),
+      wrapper = document.querySelector('.wrapper'),
+      bg = document.querySelector('.fixed-bg'),
+      sliderForm = document.querySelector('.modal-block__form'),
+      sliderInputTemp = document.querySelector('.modal-block-slider-temperature__input'),
+      labelTemp = document.querySelector('.modal-block__output_temp');
+  devicesList.addEventListener('click', function (event) {
+    if (event.target && event.target.nodeName === "LI") {
+      event.target.classList.add('devices-list__li_opened');
+      bg.classList.add('fixed-bg_active');
+      wrapper.classList.add('wrapper_blur');
+      modalBlock.style.top = event.y + "px";
+      modalBlock.style.left = event.x + "px";
+      modalBlockContent.innerHTML = event.target.innerHTML;
+      setTimeout(function () {
+        modalBlock.style.display = "block";
+        setTimeout(function () {
+          modalBlock.classList.add('modal-block_active');
+        }, 10);
+      }, 10); //Если попап крутилка, то обработчики на фильтры не нужны
+
+      if (!modalBlockContent.querySelector('.modal-block-slider_floor-temp')) {
+        Object(_filtersInPopup_js__WEBPACK_IMPORTED_MODULE_0__["default"])(modalBlockContent);
+      } else {
+        Object(_popupCircle_js__WEBPACK_IMPORTED_MODULE_1__["default"])(modalBlockContent);
+      }
+    }
+  });
+  btnApply.addEventListener('click', function () {
+    var block = document.querySelector('.devices-list__li_opened');
+    var input = modalBlockContent.querySelector('input');
+    input.defaultValue = input.value;
+    block.innerHTML = modalBlockContent.innerHTML;
+    block.classList.remove('devices-list__li_opened');
+    modalBlock.classList.remove('modal-block_active');
+    setTimeout(function () {
+      modalBlock.style.display = "none";
+      bg.classList.remove('fixed-bg_active');
+      wrapper.classList.remove('wrapper_blur');
+    }, 500);
+  });
+  btnClose.addEventListener('click', function () {
+    var block = document.querySelector('.devices-list__li_opened');
+    block.classList.remove('devices-list__li_opened');
+    modalBlock.classList.remove('modal-block_active');
+    setTimeout(function () {
+      modalBlock.style.display = "none";
+      bg.classList.remove('fixed-bg_active');
+      wrapper.classList.remove('wrapper_blur');
+    }, 500);
+  });
+  sliderForm.addEventListener('input', function () {
+    labelTemp.value = sliderInputTemp.value;
+  });
+});
 
 /***/ }),
 
@@ -224,11 +1222,36 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var btnCl
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  listeners();\n});\n\nfunction listeners() {\n  //скролл главного окна, тут просто плавно убираем иконку, если скролл начался\n  document.querySelector('.main-block__block-list').onscroll = function () {\n    //document.getElementById(\"with-icon\").querySelector(\"img\").style.opacity = \"1\";\n    document.getElementById(\"withIcon\").classList.add('main-block__li_active');\n  }; // //бургерное меню для мобилок\n  // document.getElementById('burger-menu').onclick = function () {\n  //     document.getElementById('nav-links').classList.toggle('active-menu');\n  //     document.querySelector('.fixed-bg').classList.toggle('active');\n  // };\n  //\n  // //меню фильтров для мобилок\n  // document.getElementById('filters-ul').onclick = function () {\n  //     this.classList.toggle('active');\n  // };\n\n}\n\n//# sourceURL=webpack:///./src/js/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _reset_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../reset/reset.css */ "./src/reset/reset.css");
+/* harmony import */ var _reset_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reset_reset_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sass_index_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/index.sass */ "./src/sass/index.sass");
+/* harmony import */ var _sass_index_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_index_sass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helpers_navbar_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers/navbar.js */ "./src/js/helpers/navbar.js");
+/* harmony import */ var _helpers_navbar_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_helpers_navbar_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _helpers_filters_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./helpers/filters.js */ "./src/js/helpers/filters.js");
+/* harmony import */ var _helpers_filters_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_helpers_filters_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _helpers_arrowsDevices_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./helpers/arrowsDevices.js */ "./src/js/helpers/arrowsDevices.js");
+/* harmony import */ var _helpers_arrowsDevices_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_helpers_arrowsDevices_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _helpers_arrowsScripts_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./helpers/arrowsScripts.js */ "./src/js/helpers/arrowsScripts.js");
+/* harmony import */ var _helpers_arrowsScripts_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_helpers_arrowsScripts_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _helpers_popups_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./helpers/popups.js */ "./src/js/helpers/popups.js");
+/* harmony import */ var _helpers_others_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./helpers/others.js */ "./src/js/helpers/others.js");
+/* harmony import */ var _helpers_others_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_helpers_others_js__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+
 
 /***/ }),
 
@@ -239,7 +1262,26 @@ eval("\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  liste
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./reset.css */ \"./node_modules/css-loader/dist/cjs.js!./src/reset/reset.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/reset/reset.css?");
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./reset.css */ "./node_modules/css-loader/dist/cjs.js!./src/reset/reset.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -250,8 +1292,28 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dis
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js!./index.sass */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/sass/index.sass\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/sass/index.sass?");
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js!./index.sass */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/sass/index.sass");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=bundle.js.map
