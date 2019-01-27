@@ -1,47 +1,42 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', () => {
+  const filters = document.querySelector('.devices__filters-ul');
+  const firstDevice = document.querySelector('.devices-list__li');
+  const devices = document.querySelectorAll('.devices-list__li');
+  const arrowPrev = document.querySelector('.devices__devices-btns_previous');
+  const arrowNext = document.querySelector('.devices__devices-btns_next');
 
-    const filters       = document.querySelector('.devices__filters-ul')
-        , firstDevice   = document.querySelector('.devices-list__li')
-        , devices       = document.querySelectorAll('.devices-list__li')
-        , arrowPrev     = document.querySelector('.devices__devices-btns_previous')
-        , arrowNext     = document.querySelector('.devices__devices-btns_next');
+  filters.addEventListener('click', (filter) => {
+    if (filter.target.nodeName === 'LI') {
+      firstDevice.style.marginLeft = '0';
 
-    filters.addEventListener('click', function (filter) {
+      const active = filters.querySelector('.devices__filter-li_active');
 
-        if (filter.target.nodeName === 'LI') {
+      if (active) {
+        active.classList.remove('devices__filter-li_active');
+      }
 
-            firstDevice.style.marginLeft = '0';
+      filter.target.classList.add('devices__filter-li_active');
 
-            const active = filters.querySelector('.devices__filter-li_active');
+      for (let i = 0; i < devices.length; i += 1) {
+        devices[i].classList.remove('devices-list__li_hidden');
+      }
 
-            if (active) {
-                active.classList.remove('devices__filter-li_active');
-            }
-
-            filter.target.classList.add("devices__filter-li_active");
-
-            for (let i = 0; i < devices.length; i++) {
-                devices[i].classList.remove('devices-list__li_hidden');
-            }
-
-            if (filter.target.id !== "all") {
-                for (let i = 0; i < devices.length; i++) {
-                    if (!devices[i].classList.contains('devices-list__li_' + filter.target.id)) {
-                        devices[i].classList.add('devices-list__li_hidden');
-                    }
-                }
-            }
-
-            arrowPrev.classList.add("devices__devices-btns_disabled");
-
-            if (devices.length - document.querySelectorAll(".devices-list__li_hidden").length < 6) {
-                arrowPrev.classList.add("devices__devices-btns_disabled");
-                arrowNext.classList.add("devices__devices-btns_disabled");
-            } else{
-                arrowNext.classList.remove("devices__devices-btns_disabled");
-            }
-
+      if (filter.target.id !== 'all') {
+        for (let i = 0; i < devices.length; i += 1) {
+          if (!devices[i].classList.contains(`devices-list__li_${filter.target.id}`)) {
+            devices[i].classList.add('devices-list__li_hidden');
+          }
         }
+      }
 
-    });
+      arrowPrev.classList.add('devices__devices-btns_disabled');
+
+      if (devices.length - document.querySelectorAll('.devices-list__li_hidden').length < 6) {
+        arrowPrev.classList.add('devices__devices-btns_disabled');
+        arrowNext.classList.add('devices__devices-btns_disabled');
+      } else {
+        arrowNext.classList.remove('devices__devices-btns_disabled');
+      }
+    }
+  });
 });

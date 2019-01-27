@@ -1,90 +1,81 @@
-import filtersInPopup from './filtersInPopup.js'
-import circlePopup from './popupCircle.js'
+import filtersInPopup from './filtersInPopup';
+import circlePopup from './popupCircle';
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', () => {
+  const btnClose = document.querySelector('.modal-block__modal-btns_close');
+  const btnApply = document.querySelector('.modal-block__modal-btns_apply');
+  const devicesList = document.querySelector('.devices-list');
+  const modalBlock = document.querySelector('.modal-block');
+  const modalBlockContent = document.querySelector('.modal-block__modal-info');
+  const wrapper = document.querySelector('.wrapper');
+  const bg = document.querySelector('.fixed-bg');
+  const sliderForm = document.querySelector('.modal-block__form');
+  const sliderInputTemp = document.querySelector('.modal-block-slider-temperature__input');
+  const labelTemp = document.querySelector('.modal-block__output_temp');
 
-    const btnClose          = document.querySelector(".modal-block__modal-btns_close")
-        , btnApply          = document.querySelector(".modal-block__modal-btns_apply")
-        , devicesList       = document.querySelector(".devices-list")
-        , modalBlock        = document.querySelector('.modal-block')
-        , modalBlockContent = document.querySelector('.modal-block__modal-info')
-        , wrapper           = document.querySelector('.wrapper')
-        , bg                = document.querySelector('.fixed-bg')
-        , sliderForm        = document.querySelector('.modal-block__form')
-        , sliderInputTemp   = document.querySelector('.modal-block-slider-temperature__input')
-        , labelTemp         = document.querySelector('.modal-block__output_temp');
+  devicesList.addEventListener('click', (event) => {
+    if (event.target && event.target.nodeName === 'LI') {
+      event.target.classList.add('devices-list__li_opened');
 
-    devicesList.addEventListener('click', function (event) {
+      bg.classList.add('fixed-bg_active');
 
-        if (event.target && event.target.nodeName === "LI") {
+      wrapper.classList.add('wrapper_blur');
 
-            event.target.classList.add('devices-list__li_opened');
+      modalBlock.style.top = `${event.y}px`;
+      modalBlock.style.left = `${event.x}px`;
 
-            bg.classList.add('fixed-bg_active');
+      modalBlockContent.innerHTML = event.target.innerHTML;
 
-            wrapper.classList.add('wrapper_blur');
+      setTimeout(() => {
+        modalBlock.style.display = 'block';
+        setTimeout(() => {
+          modalBlock.classList.add('modal-block_active');
+        }, 10);
+      }, 10);
 
-            modalBlock.style.top = event.y + "px";
-            modalBlock.style.left = event.x + "px";
-
-            modalBlockContent.innerHTML = event.target.innerHTML;
-
-            setTimeout(function () {
-                modalBlock.style.display = "block";
-                setTimeout(function () {
-                    modalBlock.classList.add('modal-block_active');
-                }, 10)
-            }, 10);
-
-            //Если попап крутилка, то обработчики на фильтры не нужны
-            if (!modalBlockContent.querySelector('.modal-block-slider_floor-temp')) {
-                filtersInPopup(modalBlockContent);
-            } else {
-                circlePopup(modalBlockContent);
-            }
-        }
-    });
+      // Если попап крутилка, то обработчики на фильтры не нужны
+      if (!modalBlockContent.querySelector('.modal-block-slider_floor-temp')) {
+        filtersInPopup(modalBlockContent);
+      } else {
+        circlePopup(modalBlockContent);
+      }
+    }
+  });
 
 
-    btnApply.addEventListener('click', function () {
+  btnApply.addEventListener('click', () => {
+    const block = document.querySelector('.devices-list__li_opened');
 
-        const block = document.querySelector('.devices-list__li_opened');
+    const input = modalBlockContent.querySelector('input');
 
-        const input = modalBlockContent.querySelector('input');
+    input.defaultValue = input.value;
 
-        input.defaultValue = input.value;
+    block.innerHTML = modalBlockContent.innerHTML;
 
-        block.innerHTML = modalBlockContent.innerHTML;
+    block.classList.remove('devices-list__li_opened');
 
-        block.classList.remove('devices-list__li_opened');
+    modalBlock.classList.remove('modal-block_active');
+    setTimeout(() => {
+      modalBlock.style.display = 'none';
+      bg.classList.remove('fixed-bg_active');
+      wrapper.classList.remove('wrapper_blur');
+    }, 500);
+  });
 
-        modalBlock.classList.remove('modal-block_active');
-        setTimeout(function () {
-            modalBlock.style.display = "none";
-            bg.classList.remove('fixed-bg_active');
-            wrapper.classList.remove('wrapper_blur');
-        }, 500);
-    });
+  btnClose.addEventListener('click', () => {
+    const block = document.querySelector('.devices-list__li_opened');
 
-    btnClose.addEventListener('click', function () {
+    block.classList.remove('devices-list__li_opened');
 
-        const block = document.querySelector('.devices-list__li_opened');
+    modalBlock.classList.remove('modal-block_active');
+    setTimeout(() => {
+      modalBlock.style.display = 'none';
+      bg.classList.remove('fixed-bg_active');
+      wrapper.classList.remove('wrapper_blur');
+    }, 500);
+  });
 
-        block.classList.remove('devices-list__li_opened');
-
-        modalBlock.classList.remove('modal-block_active');
-        setTimeout(function () {
-            modalBlock.style.display = "none";
-            bg.classList.remove('fixed-bg_active');
-            wrapper.classList.remove('wrapper_blur');
-        }, 500);
-
-    });
-
-    sliderForm.addEventListener('input', function () {
-
-        labelTemp.value = sliderInputTemp.value
-
-    });
-
+  sliderForm.addEventListener('input', () => {
+    labelTemp.value = sliderInputTemp.value;
+  });
 });
