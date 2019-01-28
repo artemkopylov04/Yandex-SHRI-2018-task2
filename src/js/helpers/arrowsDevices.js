@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export default function arrowsDevices() {
   const arrowPrev = document.querySelector('.devices__devices-btns_previous');
   const arrowNext = document.querySelector('.devices__devices-btns_next');
   const devices = document.querySelectorAll('.devices-list__li');
@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   device.style.marginLeft = window.getComputedStyle(device).getPropertyValue('margin-left');
 
   const count = 6; // изменить на динамически
-  const width = 215;
+  const width = device.getBoundingClientRect().width + 15;
+
+  let hiddenDevices = document.querySelectorAll('.devices__devices-btns_disabled').length;
 
   arrowPrev.classList.add('devices__devices-btns_disabled');
+  arrowNext.classList.add('devices__devices-btns_disabled');
 
-  if (devices.length - document.querySelectorAll('.devices__devices-btns_disabled').length < 6) {
-    arrowPrev.classList.add('devices__devices-btns_disabled');
-    arrowNext.classList.add('devices__devices-btns_disabled');
-  } else {
+  if ((devices.length - hiddenDevices) > 6) {
     arrowNext.classList.remove('devices__devices-btns_disabled');
   }
 
@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hiddenBlocks = document.querySelectorAll('.devices-list__li_hidden').length;
 
-    if (devices.length - document.querySelectorAll('.devices__devices-btns_disabled').length > count) {
+    if (devices.length - hiddenBlocks > count) {
       positionDevicesCarousel = Math.max(positionDevicesCarousel - width * count, -width * (devices.length - hiddenBlocks - count));
       arrowPrev.classList.remove('devices__devices-btns_disabled');
-      if (positionDevicesCarousel === -width * (devices.length - document.querySelectorAll('.devices-list__li_hidden').length - count)) {
+      if (positionDevicesCarousel === -width * (devices.length - (hiddenBlocks + count))) {
         this.classList.add('devices__devices-btns_disabled');
       }
       device.style.marginLeft = `${positionDevicesCarousel}px`;
     }
   });
-});
+}

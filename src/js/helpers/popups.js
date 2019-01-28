@@ -1,30 +1,27 @@
 import filtersInPopup from './filtersInPopup';
-import circlePopup from './popupCircle';
+import circlePopup from './circlePopup';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const btnClose = document.querySelector('.modal-block__modal-btns_close');
-  const btnApply = document.querySelector('.modal-block__modal-btns_apply');
-  const devicesList = document.querySelector('.devices-list');
+export default function popups() {
   const modalBlock = document.querySelector('.modal-block');
   const modalBlockContent = document.querySelector('.modal-block__modal-info');
   const wrapper = document.querySelector('.wrapper');
   const bg = document.querySelector('.fixed-bg');
-  const sliderForm = document.querySelector('.modal-block__form');
   const sliderInputTemp = document.querySelector('.modal-block-slider-temperature__input');
   const labelTemp = document.querySelector('.modal-block__output_temp');
 
-  devicesList.addEventListener('click', (event) => {
-    if (event.target && event.target.nodeName === 'LI') {
-      event.target.classList.add('devices-list__li_opened');
+  wrapper.addEventListener('click', (e) => {
+    const {classList, innerHTML} = e.target
 
+    if (classList.contains('devices-list__li')) {
+
+      classList.add('devices-list__li_opened');
       bg.classList.add('fixed-bg_active');
-
       wrapper.classList.add('wrapper_blur');
 
-      modalBlock.style.top = `${event.y}px`;
-      modalBlock.style.left = `${event.x}px`;
+      modalBlock.style.top = `${e.y}px`;
+      modalBlock.style.left = `${e.x}px`;
 
-      modalBlockContent.innerHTML = event.target.innerHTML;
+      modalBlockContent.innerHTML = innerHTML;
 
       setTimeout(() => {
         modalBlock.style.display = 'block';
@@ -42,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const btnApply = document.querySelector('.modal-block__modal-btns_apply');
 
   btnApply.addEventListener('click', () => {
     const block = document.querySelector('.devices-list__li_opened');
@@ -62,6 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500);
   });
 
+
+  const btnClose = document.querySelector('.modal-block__modal-btns_close');
+
   btnClose.addEventListener('click', () => {
     const block = document.querySelector('.devices-list__li_opened');
 
@@ -75,7 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500);
   });
 
+  const sliderForm = document.querySelector('.modal-block__form');
+
   sliderForm.addEventListener('input', () => {
     labelTemp.value = sliderInputTemp.value;
   });
-});
+}

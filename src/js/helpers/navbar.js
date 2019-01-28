@@ -1,14 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
+export default function navbar() {
   const navBar = document.querySelector('.header__ul');
   const links = document.querySelectorAll('.header__a');
 
-  navBar.addEventListener('click', (event) => {
-    if (event.target.nodeName === 'A') {
-      for (let i = 0; i < links.length; i += 1) {
-        links[i].classList.remove('header__a_active');
-      }
+  navBar.addEventListener('click', (e) => {
 
-      event.target.classList.add('header__a_active');
+    const { classList } = e.target;
+
+    if (classList.contains('header__a')) {
+      Object.values(links).map((el) => {
+          el.classList.remove('header__a_active');
+      });
+
+      classList.add('header__a_active');
     }
   });
-});
+}

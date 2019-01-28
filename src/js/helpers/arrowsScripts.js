@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export default function arrowsScripts() {
   const scriptsContainer = document.querySelector('.scripts__ul');
   const scripts = document.querySelectorAll('.scripts__li');
   const btnPrev = document.querySelector('.scripts__scripts-btn-prev');
@@ -8,11 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     .getPropertyValue('margin-left');
 
   btnPrev.classList.add('scripts__scripts-btn-prev_disabled');
+  btnNext.classList.add('scripts__scripts-btn-next_disabled');
 
-  if (scripts.length < 9) {
-    btnPrev.classList.add('scripts__scripts-btn-prev_disabled');
-    btnNext.classList.add('scripts__scripts-btn-next_disabled');
-  } else {
+  if (scripts.length > 9) {
     btnNext.classList.remove('scripts__scripts-btn-next_disabled');
   }
 
@@ -42,4 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     scriptsContainer.style.marginLeft = `${positionScriptsCarousel}px`;
   };
-});
+}

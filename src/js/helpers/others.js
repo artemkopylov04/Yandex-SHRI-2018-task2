@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export default function others() {
   // скролл главного окна, тут просто плавно убираем иконку, если скролл начался
   document.querySelector('.main-block__block-list').onscroll = function () {
     // document.getElementById("with-icon").querySelector("img").style.opacity = "1";
@@ -26,4 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // modalBlock.setAttribute('style', "transform: translate(" + translateX + "px, " + translateY + "px)");
   //
   // };
-});
+}
