@@ -10,9 +10,13 @@ export default function popups() {
   const labelTemp = document.querySelector('.modal-block__output_temp');
 
   wrapper.addEventListener('click', (e) => {
-    const {classList, innerHTML} = e.target
 
-    if (classList.contains('devices-list__li')) {
+    const found = e.path.find((el) => {
+      return el.classList.contains('devices-list__li')
+    });
+
+    if (found) {
+      const {classList, innerHTML} = found;
 
       classList.add('devices-list__li_opened');
       bg.classList.add('fixed-bg_active');
@@ -27,8 +31,8 @@ export default function popups() {
         modalBlock.style.display = 'block';
         setTimeout(() => {
           modalBlock.classList.add('modal-block_active');
-        }, 10);
-      }, 10);
+        }, 100);
+      }, 100);
 
       // Если попап крутилка, то обработчики на фильтры не нужны
       if (!modalBlockContent.querySelector('.modal-block-slider_floor-temp')) {
@@ -44,11 +48,12 @@ export default function popups() {
   btnApply.addEventListener('click', () => {
     const block = document.querySelector('.devices-list__li_opened');
 
-    const input = modalBlockContent.querySelector('input');
+    const input = document.querySelector('.modal-block__modal-info input');
 
     input.defaultValue = input.value;
 
     block.innerHTML = modalBlockContent.innerHTML;
+    modalBlockContent.innerHTML = "";
 
     block.classList.remove('devices-list__li_opened');
 
