@@ -164,8 +164,8 @@
                         <form class="modal-block__form modal-block__form_temperature">
                             <input type="range" value="23" min="-10" max="30" class="modal-block-slider-temperature__input"/>
                             <output class="modal-block__output_temp">+20</output>
-                            <output class="modal-block__output_temp-min"></output>
-                            <output class="modal-block__output_temp-max"></output>
+                            <output class="modal-block__output_temp-min">-10</output>
+                            <output class="modal-block__output_temp-max">+30</output>
                         </form>
                     </div>
                 </li>
@@ -173,14 +173,14 @@
                         <p class="devices-list__info-title">D-Link Omna 180 Cam<br><span>Включится в 17:00</span>
                     <div class="modal-block-slider modal-block-slider_light">
                         <ul class="modal-block__ul modal-block__ul_light">
-                            <li class="modal-block__li modal-block-slider-light__li_manually modal-block__li_active">Вручную</li>
+                            <li class="modal-block__li modal-block-slider-light__li_manually-light modal-block__li_active">Вручную</li>
                             <li class="modal-block__li modal-block-slider-light__li_day">Дневной свет</li>
-                            <li class="modal-block__li modal-block-slider-light__li_evening">Вечерний свет<</li>
+                            <li class="modal-block__li modal-block-slider-light__li_evening">Вечерний свет</li>
                             <li class="modal-block__li modal-block-slider-light__li_sunrise">Рассвет</li>
                         </ul>
                         <form class="modal-block__form modal-block__form_light">
                             <input type="range" min="0" max="100" value="23" class="modal-block-slider-light__input">
-                            <output class="modal-block__output_light-min"></output>
+                            <output class="modal-block__output_light"></output>
                             <output class="modal-block__output_light-max"></output>
                         </form>
                     </div>
@@ -192,10 +192,11 @@
                             <svg width="221px" height="221px" viewBox="0 0 221 221" class="modal-block-slider-floor-temp__svg">
                                 <path d="" class="modal-block-slider-floor-temp__path_black" fill="none" stroke="#000000" stroke-width="21" stroke-dasharray="none"></path>
                                 <path d="" class="modal-block-slider-floor-temp__path_orange" fill="none" stroke="#F5A623" stroke-width="22" stroke-dasharray="none"></path>
-                                <path d="" class="modal-block-slider-floor-temp__path_dasharray" fill="none" stroke="#FFF" stroke-width="22" stroke-dasharray="2.5"></path>
+                                <path d="" class="modal-block-slider-floor-temp__path_dasharray" fill="none" stroke="#FFF" stroke-width="22" stroke-dasharray="2"></path>
                             </svg>
                             <div class="modal-block-slider-floor-temp__turner" id="div-floor-slider">
                                 <input type="range" orient="circular" min="20" max="30" step="1" value="20" class="modal-block-slider-floor-temp__input"/>
+                                <output name="OutputTemp" class="modal-block-slider-floor-temp__output-sub">+20</output>
                                 <output name="OutputTemp" class="modal-block-slider-floor-temp__output">+20</output>
                             </div>
                         </form>

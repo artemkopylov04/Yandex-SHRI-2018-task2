@@ -27,18 +27,20 @@ export default function circlePopup(context) {
     const blackPartSlider = context.querySelector('.modal-block-slider-floor-temp__path_black');
     const dashArray = context.querySelector('.modal-block-slider-floor-temp__path_dasharray');
 
-    let degree = 270 / (slider.max - slider.min);
-    orangePartSlider.setAttribute('d', describeArc(110, 110, 98, 225, 225 + (slider.value - slider.min) * degree));
-    blackPartSlider.setAttribute('d', describeArc(110, 110, 98, 225 + (slider.value - slider.min) * degree, 495));
-    dashArray.setAttribute('d', describeArc(110, 110, 98, 225, 495));
+    let degree = 300 / (slider.max - slider.min);
+    orangePartSlider.setAttribute('d', describeArc(110, 110, 98, 210, 210 + (slider.value - slider.min) * degree));
+    blackPartSlider.setAttribute('d', describeArc(110, 110, 98, 210, 510));
+    dashArray.setAttribute('d', describeArc(110, 110, 98, 210, 510));
 
     slider.addEventListener('input', function () {
       const output = context.querySelector('.modal-block-slider-floor-temp__output');
+      const outputSub = context.querySelector('.modal-block-slider-floor-temp__output-sub');
 
       output.innerHTML = `+${this.value}`;
-      degree = 270 / (this.max - this.min);
+      outputSub.innerHTML = `+${this.value}`;
+      degree = 300 / (this.max - this.min);
       const iteration = this.value - this.min;
-      orangePartSlider.setAttribute('d', describeArc(110, 110, 98, 225, 225 + iteration * degree));
+      orangePartSlider.setAttribute('d', describeArc(110, 110, 98, 210, 210 + iteration * degree));
     });
   }
 }

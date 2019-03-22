@@ -30,13 +30,14 @@ export default function filtersInPopup() {
     document.querySelector('.modal-block__li_active')
         .classList.remove('modal-block__li_active');
 
-    document.querySelector('.modal-block-slider-light__li_manually')
+    document.querySelector('.modal-block-slider-light__li_manually-light')
         .classList.add('modal-block__li_active');
   });
 
   filters.addEventListener('click', (e) => {
     const { classList } = e.target;
-    const templateClassName = 'modal-block-slider-temperature__li_';
+    const tempClassName = 'modal-block-slider-temperature__li_';
+    const lightClassName = 'modal-block-slider-light__li_';
     const modes = Object.keys(filterValues);
 
     if (classList.contains('modal-block__li')) {
@@ -47,7 +48,7 @@ export default function filtersInPopup() {
       classList.add('modal-block__li_active');
 
       modes.map((el) => {
-        if (classList.contains(templateClassName + el)) {
+        if (classList.contains(tempClassName + el)) {
             const value = filterValues[el];
 
             sliderTemperature.value = value;
@@ -56,6 +57,9 @@ export default function filtersInPopup() {
             } else {
                 label.innerHTML = value;
             }
+        } else if (classList.contains(lightClassName + el)) {
+          sliderLight.value = filterValues[el];
+
         }
       });
     }

@@ -38,6 +38,7 @@ export default function popups() {
       if (!modalBlockContent.querySelector('.modal-block-slider_floor-temp')) {
         filtersInPopup(modalBlockContent);
       } else {
+        modalBlock.style.height = '343px';
         circlePopup(modalBlockContent);
       }
     }
@@ -58,6 +59,7 @@ export default function popups() {
     block.classList.remove('devices-list__li_opened');
 
     modalBlock.classList.remove('modal-block_active');
+    modalBlock.style.height = '';
     setTimeout(() => {
       modalBlock.style.display = 'none';
       bg.classList.remove('fixed-bg_active');
@@ -74,6 +76,7 @@ export default function popups() {
     block.classList.remove('devices-list__li_opened');
 
     modalBlock.classList.remove('modal-block_active');
+    modalBlock.style.height = '';
     setTimeout(() => {
       modalBlock.style.display = 'none';
       bg.classList.remove('fixed-bg_active');

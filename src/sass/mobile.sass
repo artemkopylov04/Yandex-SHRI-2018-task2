@@ -8,161 +8,127 @@
     overflow-x: hidden
     overflow-y: auto
 
-  header
+  .wrapper
+    margin: 0
+
+  .header
     background: #fff
     border: 0
     height: 64px
-    padding: 0 20px
     position: fixed
-    width: calc(100% - 40px)
+    padding-left: 20px
     z-index: 1001
 
-    .container
-      justify-content: space-between
+    &__burger-menu
+      display: block
 
-      img
-        z-index: 2
+    &__ul
+      transition: .5s
+      width: 100%
 
-      .bg
-        background: #fff
-        display: block
-        height: 64px
-        position: absolute
-        right: 0
-        width: 100%
-        z-index: 1
+    &__li
+      opacity: 0
 
-      .nav-links
-        background-color: #fff
-        border-radius: 0 0 20px 20px
-        box-shadow: 0 4px 6px 0 rgba(197,186,186,.5)
-        position: absolute
-        right: 0
-        top: 60px
-        transform: translate3d(0, -126px, 0)
-        transition: .5s
-        width: 100%
-        z-index: -1
-
-        &.active-menu
-          transform: translate3d(0, 0, 0)
-
-        .links
-          align-items: center
-          flex-flow: nowrap column
-          padding: 0
-          width: 100%
-
-          li
-            padding: 10px 0
-
-      .menu
-        display: block
+    &__li-logo
+      position: absolute
 
   main
-    margin: 0
-    padding: 64px 0 0 0
+    display: flex
+    flex-flow: nowrap column
 
-    .section-main-top
-      flex-flow: nowrap column
+    .main-block
+      flex: 1
 
-      .main-block
-        flex: 1
+      .main-block__content
         height: 282px
-        padding: 0 20px
+        background: url('../../dist/src/imgs/bg@1x.png')
+        border-radius: 20px
+        width: calc(100vw - 20px - 40px)
+        margin-left: 20px
 
-        .title
-          display: none
+        .main-label
+          h1
+            color: #333
+            font-size: 18px
+            line-height: 20px
+            margin: 0
 
-        .main-div
-          background: url('../../dist/src/imgs/bg@1x.png') 39% 0% no-repeat
-          border-radius: 20px
-          height: 100%
-          margin: 0
+          p
+            color: #333
+            font-size: 12px
+            line-height: 14px
+            margin-bottom: 15px
+            margin-top: 5px
 
-          .main-label
-            h1
-              color: #333
-              font-size: 18px
-              line-height: 20px
-              margin: 0
+          .home-temperature
+            height: 28px
+            width: 60px
 
             p
-              color: #333
+              color: #858585
               font-size: 12px
-              line-height: 14px
-              margin-bottom: 15px
-              margin-top: 5px
+              margin-bottom: 5px
+              margin-top: 0
 
-            .home-temperature
-              height: 28px
-              width: 60px
+            h1
+              color: #333
+              font-size: 24px
+              letter-spacing: 0
+              line-height: 28px
+              text-align: left
 
-              p
-                color: #858585
-                font-size: 12px
-                margin-bottom: 5px
-                margin-top: 0
+          .weather
+            height: 28px
+            width: 60px
 
-              h1
-                color: #333
-                font-size: 24px
-                letter-spacing: 0
-                line-height: 28px
-                text-align: left
+            p
+              color: #858585
+              font-size: 12px
+              margin-bottom: 5px
+              margin-top: 0
 
-            .weather
-              height: 28px
-              width: 60px
+            h1
+              color: #333
+              font-size: 24px
+              letter-spacing: 0
+              line-height: 28px
+              text-align: left
 
-              p
-                color: #858585
-                font-size: 12px
-                margin-bottom: 5px
-                margin-top: 0
-
-              h1
-                color: #333
-                font-size: 24px
-                letter-spacing: 0
-                line-height: 28px
-                text-align: left
-
-              img
-                right: -5px
-                top: 23px
-                width: 20px
+            img
+              right: -5px
+              top: 23px
+              width: 20px
 
 
-        .blocks-scroll
-          bottom: 20px
-          height: 120px
-          width: 335px
+      .blocks-scroll
+        bottom: 20px
+        height: 120px
+        width: 335px
 
-          .parent-scroller
+        .parent-scroller
 
-            .child-scroller
-              overflow-x: scroll
-              overflow-y: hidden
-              padding: 0
+          .child-scroller
+            overflow-x: scroll
+            overflow-y: hidden
+            padding: 0
 
-              .scroller-ul
+            .scroller-ul
 
-                .scroll-block-main-label
-                  flex: 1 0 170px
+              .scroll-block-main-label
+                flex: 1 0 170px
+                margin: 0 20px 0 0
+
+                &:first-child
+                  margin: 0 20px 0 20px
+
+                &:last-child
                   margin: 0 20px 0 0
 
-                  &:first-child
-                    margin: 0 20px 0 20px
-
-                  &:last-child
-                    margin: 0 20px 0 0
-
-                &:after
-                  content: "1"
-                  display: block
-                  opacity: 0
-                  width: 20px
+              &:after
+                content: "1"
+                display: block
+                opacity: 0
+                width: 20px
 
       .scenarios
         flex: 1
