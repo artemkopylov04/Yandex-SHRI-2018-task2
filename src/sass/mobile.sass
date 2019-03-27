@@ -3,6 +3,7 @@
 
 @media (max-width: 450px)
   body
+    width: 100%
     display: flex
     flex-flow: nowrap column
     overflow-x: hidden
@@ -39,127 +40,56 @@
     .main-block
       flex: 1
 
-      .main-block__content
+      &__content
         height: 282px
         background: url('../../dist/src/imgs/bg@1x.png')
         border-radius: 20px
         width: calc(100vw - 20px - 40px)
         margin-left: 20px
 
-        .main-label
-          h1
-            color: #333
-            font-size: 18px
-            line-height: 20px
-            margin: 0
-
-          p
-            color: #333
-            font-size: 12px
-            line-height: 14px
-            margin-bottom: 15px
-            margin-top: 5px
-
-          .home-temperature
-            height: 28px
-            width: 60px
-
-            p
-              color: #858585
-              font-size: 12px
-              margin-bottom: 5px
-              margin-top: 0
-
-            h1
-              color: #333
-              font-size: 24px
-              letter-spacing: 0
-              line-height: 28px
-              text-align: left
-
-          .weather
-            height: 28px
-            width: 60px
-
-            p
-              color: #858585
-              font-size: 12px
-              margin-bottom: 5px
-              margin-top: 0
-
-            h1
-              color: #333
-              font-size: 24px
-              letter-spacing: 0
-              line-height: 28px
-              text-align: left
-
-            img
-              right: -5px
-              top: 23px
-              width: 20px
-
-
-      .blocks-scroll
-        bottom: 20px
+      &__blocks-container
+        right: 0
+        top: 150px
         height: 120px
         width: 335px
 
-        .parent-scroller
+      &__block-list
+        display: flex
+        flex-flow: nowrap row
 
-          .child-scroller
-            overflow-x: scroll
-            overflow-y: hidden
-            padding: 0
+      &__li:first-child
+        margin: 0 20px 0 0
 
-            .scroller-ul
+      &__li
+        flex: 1 0 200px
+        margin: 0 20px 0 0
 
-              .scroll-block-main-label
-                flex: 1 0 170px
-                margin: 0 20px 0 0
+    .scripts
+      flex: 1
+      margin-top: 30px
+      overflow: hidden
+      padding: 0
+      align-items: normal
+      height: 200px
 
-                &:first-child
-                  margin: 0 20px 0 20px
+      &__scripts-btns
+        display: none
 
-                &:last-child
-                  margin: 0 20px 0 0
+      &__scripts-container
+        flex: 100%
+        height: 100%
+        margin: 0
 
-              &:after
-                content: "1"
-                display: block
-                opacity: 0
-                width: 20px
+      &__ul
+        column-width: auto
+        height: 110px
+        flex-flow: row nowrap
+        overflow-x: scroll
+        width: 100%
 
-      .scenarios
-        flex: 1
-        margin-top: 30px
-        padding: 0 20px
-
-        .scenarios-btns
-          display: none
-
-        .scenarios-nav
-          margin: 0 -20px
-          overflow: hidden
-
-          .scenarios-ul
-            flex-flow: nowrap row
-            height: 110px
-            overflow: scroll
-            width: 100%
-
-            .scenarios-div
-              flex-flow: nowrap row
-
-              margin: 0
-              padding: 0
-
-              .scenarios-block
-                margin: 0 20px 0 0
-
-            &:before
-              content: ""
-              margin-right: 20px
+        &:before
+          content: ""
+          margin-right: 20px
 
     .section-devices
       padding: 0
